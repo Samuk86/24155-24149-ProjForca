@@ -16,22 +16,26 @@ public class ListaDupla<Dado>
 
   public void PosicionarNoInicio()
   {
-    //  codificar
+        //  codificar
+        atual = Primeiro;
   }
 
   public void PosicionarNoFinal()
   {
-    //  codificar
+        //  codificar
+        atual = Ultimo; 
   }
 
   public void Avancar()
   {
-    //  codificar
+        //  codificar
+        atual = atual.Prox;
   }
 
   public void Retroceder()
   {
-    //  codificar
+        //  codificar
+        atual = atual.Ant;
   }
 
   public void PosicionarEm(int indice)
@@ -39,6 +43,15 @@ public class ListaDupla<Dado>
     // fica para vocês fazerem
 
     // verificar se indice é válido ( >= 0 && < quantosNos)
+    if(indice >= 0 && indice < quantosNos)
+        {
+            atual = primeiro;
+            for(int i = 0; i < indice; i++)
+            {
+                atual = atual.Prox;
+            }
+            numeroDoNoAtual = indice;   
+        }
     // se for valido:
     //    atual aponta o primeiro nó;
     //    percorre "indice" nós com o ponteiro atual sequencial
@@ -249,10 +262,11 @@ public class ListaDupla<Dado>
     // Existe() encontrou intervalo de inclusão do novo nó (entre anterior e atual)
 
     var novo = new NoDuplo<Dado>(dados);
-    anterior.Prox = novo;   // liga anterior ao novo
+       
+    atual.Ant.Prox = novo;  // liga anterior ao novo
     novo.Prox = atual;      // e novo no atual
 
-    if (anterior == ultimo)  // se incluiu ao final da lista,
+    if (atual.Ant == ultimo)  // se incluiu ao final da lista,
        ultimo = novo;        // atualiza o apontador ultimo
     quantosNos++;            // incrementa número de nós da lista     	}	
   }
@@ -278,12 +292,12 @@ public class ListaDupla<Dado>
     else
       if (atual == ultimo)
       {
-        anterior.Prox = null;   // desliga o último nó
-        ultimo = anterior;
+        atual.Ant.Prox = null;  // desliga o último nó
+        ultimo = atual.Ant;
       }
       else     // nó interno a ser excluido
       {
-        anterior.Prox = atual.Prox;
+        atual.Ant.Prox = atual.Prox;
       }
 
     quantosNos--;

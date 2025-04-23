@@ -22,7 +22,19 @@ namespace apListaLigada
     private void FazerLeitura(ref ListaDupla<Aluno> qualLista)
     {
       // instanciar a lista de palavras e dicas
+      qualLista = new ListaDupla<Aluno>();
       // pedir ao usuário o nome do arquivo de entrada
+      if (dlgAbrir.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader arquivo = new StreamReader(dlgAbrir.FileName);
+                string linha = "";
+                while (!arquivo.EndOfStream)
+                {
+                    linha = arquivo.ReadLine();
+                    qualLista.InserirAposFim(new Aluno(linha));
+                }
+                arquivo.Close();
+            }
       // abrir esse arquivo e lê-lo linha a linha
       // para cada linha, criar um objeto da classe de Palavra e Dica
       // e inseri-0lo no final da lista duplamente ligada
