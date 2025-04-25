@@ -16,46 +16,53 @@ public class ListaDupla<Dado>
 
   public void PosicionarNoInicio()
   {
-        //  codificar
-        atual = Primeiro;
+        atual = primeiro;
+        numeroDoNoAtual = 0;
   }
 
   public void PosicionarNoFinal()
   {
-        //  codificar
-        atual = Ultimo; 
+        atual = ultimo;
+        numeroDoNoAtual = quantosNos - 1;
   }
 
   public void Avancar()
   {
-        //  codificar
-        atual = atual.Prox;
+        if (atual != ultimo)
+        {
+            atual = atual.Prox;
+            numeroDoNoAtual++;
+        }
   }
 
   public void Retroceder()
   {
-        //  codificar
-        atual = atual.Ant;
+        if (atual != ultimo)
+        {
+            atual = atual.Ant;
+            numeroDoNoAtual--;
+        }
   }
 
   public void PosicionarEm(int indice)
   {
-    // fica para vocês fazerem
+        // fica para vocês fazerem
 
-    // verificar se indice é válido ( >= 0 && < quantosNos)
-    if(indice >= 0 && indice < quantosNos)
+        // verificar se indice é válido ( >= 0 && < quantosNos)
+        // se for valido:
+        //    atual aponta o primeiro nó;
+        //    percorre "indice" nós com o ponteiro atual sequencial
+        //      atualiza a variável numeroDoNoAtual
+
+        if (indice >= 0 && indice < quantosNos)
         {
             atual = primeiro;
-            for(int i = 0; i < indice; i++)
+            for (int i = 0; i <= indice; i++)
             {
                 atual = atual.Prox;
+                numeroDoNoAtual++;
             }
-            numeroDoNoAtual = indice;   
         }
-    // se for valido:
-    //    atual aponta o primeiro nó;
-    //    percorre "indice" nós com o ponteiro atual sequencial
-    //      atualiza a variável numeroDoNoAtual
   }
 
   public Dado this[int indice]
@@ -262,11 +269,10 @@ public class ListaDupla<Dado>
     // Existe() encontrou intervalo de inclusão do novo nó (entre anterior e atual)
 
     var novo = new NoDuplo<Dado>(dados);
-       
-    atual.Ant.Prox = novo;  // liga anterior ao novo
+    anterior.Prox = novo;   // liga anterior ao novo
     novo.Prox = atual;      // e novo no atual
 
-    if (atual.Ant == ultimo)  // se incluiu ao final da lista,
+    if (anterior == ultimo)  // se incluiu ao final da lista,
        ultimo = novo;        // atualiza o apontador ultimo
     quantosNos++;            // incrementa número de nós da lista     	}	
   }
@@ -292,12 +298,12 @@ public class ListaDupla<Dado>
     else
       if (atual == ultimo)
       {
-        atual.Ant.Prox = null;  // desliga o último nó
-        ultimo = atual.Ant;
+        anterior.Prox = null;   // desliga o último nó
+        ultimo = anterior;
       }
       else     // nó interno a ser excluido
       {
-        atual.Ant.Prox = atual.Prox;
+        anterior.Prox = atual.Prox;
       }
 
     quantosNos--;

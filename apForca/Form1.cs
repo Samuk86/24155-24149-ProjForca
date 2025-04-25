@@ -7,7 +7,7 @@ namespace apListaLigada
 {
   public partial class FrmAlunos : Form
   {
-    ListaDupla<Aluno> lista1;
+    ListaDupla<Palavra> lista1;
 
     public FrmAlunos()
     {
@@ -19,7 +19,7 @@ namespace apListaLigada
 
     }
 
-    private void FazerLeitura(ref ListaDupla<Aluno> qualLista)
+    private void FazerLeitura(ref ListaDupla<Palavra> qualLista)
     {
       // instanciar a lista de palavras e dicas
       qualLista = new ListaDupla<Aluno>();
@@ -38,6 +38,8 @@ namespace apListaLigada
       // abrir esse arquivo e lê-lo linha a linha
       // para cada linha, criar um objeto da classe de Palavra e Dica
       // e inseri-0lo no final da lista duplamente ligada
+
+            qualLista = new ListaDupla<Palavra>();
     }
 
     private void btnIncluir_Click(object sender, EventArgs e)
@@ -72,11 +74,11 @@ namespace apListaLigada
       // percorrer a lista ligada e gravar seus dados no arquivo de saída
     }
 
-    private void ExibirDados(ListaDupla<Aluno> aLista, ListBox lsb, Direcao qualDirecao)
+    private void ExibirDados(ListaDupla<Palavra> aLista, ListBox lsb, Direcao qualDirecao)
     {
       lsb.Items.Clear();
       var dadosDaLista = aLista.Listagem(qualDirecao);
-      foreach (Aluno aluno in dadosDaLista)
+      foreach (Palavra aluno in dadosDaLista)
         lsb.Items.Add(aluno);
     }
 
