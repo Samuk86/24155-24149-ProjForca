@@ -7,65 +7,82 @@ namespace apListaLigada
 {
   public partial class FrmAlunos : Form
   {
-    ListaDupla<Palavra> lista1;
+    ListaDupla<PalavraDica> lista1;
 
     public FrmAlunos()
     {
       InitializeComponent();
     }
 
-    private void btnLerArquivo1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void FazerLeitura(ref ListaDupla<Palavra> qualLista)
+    private void FazerLeitura(ref ListaDupla<PalavraDica> qualLista)
     {
       // instanciar a lista de palavras e dicas
-      qualLista = new ListaDupla<Aluno>();
+      qualLista = new ListaDupla<PalavraDica>();
       // pedir ao usuário o nome do arquivo de entrada
       if (dlgAbrir.ShowDialog() == DialogResult.OK)
             {
+                // abrir esse arquivo e lê-lo linha a linha
                 StreamReader arquivo = new StreamReader(dlgAbrir.FileName);
                 string linha = "";
                 while (!arquivo.EndOfStream)
                 {
+                    // para cada linha, criar um objeto da classe de Palavra e Dica
+                    // e inseri-lo no final da lista duplamente ligada
                     linha = arquivo.ReadLine();
-                    qualLista.InserirAposFim(new Aluno(linha));
+                    qualLista.InserirAposFim(new PalavraDica(linha));
                 }
                 arquivo.Close();
             }
-      // abrir esse arquivo e lê-lo linha a linha
-      // para cada linha, criar um objeto da classe de Palavra e Dica
-      // e inseri-0lo no final da lista duplamente ligada
-
-            qualLista = new ListaDupla<Palavra>();
+            qualLista = new ListaDupla<PalavraDica>();
     }
 
     private void btnIncluir_Click(object sender, EventArgs e)
     {
-      // se o usuário digitou palavra e dica:
-      // criar objeto da classe Palavra e Dica para busca
-      // tentar incluir em ordem esse objeto na lista1
-      // se não incluiu (já existe) avisar o usuário
+            // se o usuário digitou palavra e dica:
+            if (txtPalavra.Text != "" && txtDica.Text != "")
+            {
+                // criar objeto da classe Palavra e Dica para busca
+                var novaPalavra = new PalavraDica(txtPalavra.Text, txtDica.Text);
+                // tentar incluir em ordem esse objeto na lista1
+                if (!lista1.InserirEmOrdem(novaPalavra))
+                    // se não incluiu (já existe) avisar o usuário
+                    MessageBox.Show("Palavra repetida.");
+                else
+                    MessageBox.Show("Palavra incluída em ordem.");
+                ExibirRegistroAtual();
+            }
+      
     }
 
 
     private void btnBuscar_Click(object sender, EventArgs e)
     {
-      // se a palavra digitada não é vazia:
-      // criar um objeto da classe de Palavra e Dica para busca
-      // se a palavra existe na lista1, posicionar o ponteiro atual nesse nó e exibir o registro atual
-      // senão, avisar usuário que a palavra não existe
-      // exibir o nó atual
+            // se a palavra digitada não é vazia:
+            if (txtPalavra.Text != "")
+            {
+                // criar um objeto da classe de Palavra e Dica para busca
+                var palavraProcurada = new PalavraDica(txtPalavra.Text, ".");
+                // se a palavra existe na lista1, posicionar o ponteiro atual nesse nó e exibir o registro atual
+                if (!lista1.Existe(palavraProcurada))
+                    // senão, avisar usuário que a palavra não existe
+                    MessageBox.Show("Palavra não encontrada!");
+                // exibir o nó atual
+                else
+                    ExibirRegistroAtual();
+            }
     }
 
     private void btnExcluir_Click(object sender, EventArgs e)
     {
-      // para o nó atualmente visitado e exibido na tela:
-      // perguntar ao usuário se realmente deseja excluir essa palavra e dica
-      // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
-      // se não, manter como está
+            if (txtPalavra.Text != "")
+            {
+                // para o nó atualmente visitado e exibido na tela:
+                // perguntar ao usuário se realmente deseja excluir essa palavra e dica
+                
+                // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
+                // se não, manter como está
+            }
+      
     }
 
     private void FrmAlunos_FormClosing(object sender, FormClosingEventArgs e)
@@ -74,12 +91,12 @@ namespace apListaLigada
       // percorrer a lista ligada e gravar seus dados no arquivo de saída
     }
 
-    private void ExibirDados(ListaDupla<Palavra> aLista, ListBox lsb, Direcao qualDirecao)
+    private void ExibirDados(ListaDupla<PalavraDica> aLista, ListBox lsb, Direcao qualDirecao)
     {
       lsb.Items.Clear();
       var dadosDaLista = aLista.Listagem(qualDirecao);
-      foreach (Palavra aluno in dadosDaLista)
-        lsb.Items.Add(aluno);
+      foreach (PalavraDica palavra in dadosDaLista)
+        lsb.Items.Add(palavra);
     }
 
     private void tabControl1_Enter(object sender, EventArgs e)
@@ -99,45 +116,70 @@ namespace apListaLigada
 
     private void FrmAlunos_Load(object sender, EventArgs e)
     {
-      // fazer a leitura do arquivo escolhido pelo usuário e armazená-lo na lista1
-      // posicionar o ponteiro atual no início da lista duplamente ligada
-      // Exibir o Registro Atual;
+            // fazer a leitura do arquivo escolhido pelo usuário e armazená-lo na lista1
+            FazerLeitura(ref lista1);
+            // posicionar o ponteiro atual no início da lista duplamente ligada
+            lista1.PosicionarNoInicio();
+            // Exibir o Registro Atual;
+            ExibirRegistroAtual();
     }
 
     private void btnInicio_Click(object sender, EventArgs e)
     {
-      // posicionar o ponteiro atual no início da lista duplamente ligada
-      // Exibir o Registro Atual;
+            // posicionar o ponteiro atual no início da lista duplamente ligada
+            lista1.PosicionarNoInicio();
+            // Exibir o Registro Atual;
+            ExibirRegistroAtual();
     }
 
     private void btnAnterior_Click(object sender, EventArgs e)
     {
-      // Retroceder o ponteiro atual para o nó imediatamente anterior 
-      // Exibir o Registro Atual;
+            // Retroceder o ponteiro atual para o nó imediatamente anterior 
+            lista1.Retroceder();
+            // Exibir o Registro Atual;
+            ExibirRegistroAtual();
     }
 
     private void btnProximo_Click(object sender, EventArgs e)
     {
-      // Retroceder o ponteiro atual para o nó seguinte 
-      // Exibir o Registro Atual;
+            // Avançar o ponteiro atual para o nó seguinte 
+            lista1.Avancar();
+            // Exibir o Registro Atual;
+            ExibirRegistroAtual();
     }
 
     private void btnFim_Click(object sender, EventArgs e)
     {
-      // posicionar o ponteiro atual no último nó da lista 
-      // Exibir o Registro Atual;
+            // posicionar o ponteiro atual no último nó da lista 
+            lista1.PosicionarNoFinal();
+            // Exibir o Registro Atual;
+            ExibirRegistroAtual();
     }
 
     private void ExibirRegistroAtual()
     {
-      // se a lista não está vazia:
-      // acessar o nó atual e exibir seus campos em txtDica e txtPalavra
-      // atualizar no status bar o número do registro atual / quantos nós na lista
+            // se a lista não está vazia:
+            if (!lista1.EstaVazia)
+            {
+                // acessar o nó atual e exibir seus campos em txtDica e txtPalavra
+                var palavraAtual = lista1[lista1.NumeroDoNoAtual];
+                txtPalavra.Text = palavraAtual.Palavra;
+                txtDica.Text = palavraAtual.Dica;
+                // atualizar no status bar o número do registro atual / quantos nós na lista
+                slRegistro.Text = $"Registro: {lista1.NumeroDoNoAtual+1}/{lista1.QuantosNos}";
+            }
+            
     }
 
     private void btnEditar_Click(object sender, EventArgs e)
     {
-      // alterar a dica e guardar seu novo valor no nó exibido
+            // alterar a dica e guardar seu novo valor no nó exibido
+            if (txtDica.Text != "")
+            {
+                string novaDica = txtDica.Text;
+                lista1[lista1.NumeroDoNoAtual].Dica = novaDica;
+                MessageBox.Show("Dica alterada.");
+            }
     }
 
     private void btnSair_Click(object sender, EventArgs e)
@@ -149,5 +191,6 @@ namespace apListaLigada
     {
 
     }
-  }
+
+    }
 }
