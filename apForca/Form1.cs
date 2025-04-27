@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Rafael Ferreira Rigo - 24149
+//Samuel Rosa Parra - 24155
+
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
@@ -34,11 +38,12 @@ namespace apListaLigada
                 arquivo.Close();
             }
             qualLista = new ListaDupla<PalavraDica>();
+            
     }
 
     private void btnIncluir_Click(object sender, EventArgs e)
     {
-            // se o usuário digitou palavra e dica:
+            // sx''e o usuário digitou palavra e dica:
             if (txtPalavra.Text != "" && txtDica.Text != "")
             {
                 // criar objeto da classe Palavra e Dica para busca
@@ -74,13 +79,15 @@ namespace apListaLigada
 
     private void btnExcluir_Click(object sender, EventArgs e)
     {
-            if (txtPalavra.Text != "")
+            if (txtPalavra. Text != "")
             {
                 // para o nó atualmente visitado e exibido na tela:
                 // perguntar ao usuário se realmente deseja excluir essa palavra e dica
-                
                 // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
+                lista1.Remover(txtPalavra.Text);
+                lista1.Remover(txtDica.Text);
                 // se não, manter como está
+                ExibirRegistroAtual();
             }
       
     }
@@ -88,6 +95,14 @@ namespace apListaLigada
     private void FrmAlunos_FormClosing(object sender, FormClosingEventArgs e)
     {
       // solicitar ao usuário que escolha o arquivo de saída
+      if (dlgAbrir.ShowDialog() == DialogResult.OK){
+          StreamWriter arquivo = new StreamWriter(dlgAbrir.FileName);
+          while(lista1.atual != null){
+              arquivo.WriteLine(lista1.Atual.Info);
+              lista1.Atual = lista1.Atual.Prox;
+          }
+      }
+
       // percorrer a lista ligada e gravar seus dados no arquivo de saída
     }
 
