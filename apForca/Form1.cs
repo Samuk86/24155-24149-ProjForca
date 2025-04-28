@@ -37,8 +37,6 @@ namespace apListaLigada
                 }
                 arquivo.Close();
             }
-            qualLista = new ListaDupla<PalavraDica>();
-            
     }
 
     private void btnIncluir_Click(object sender, EventArgs e)
@@ -84,8 +82,7 @@ namespace apListaLigada
                 // para o nó atualmente visitado e exibido na tela:
                 // perguntar ao usuário se realmente deseja excluir essa palavra e dica
                 // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
-                lista1.Remover(txtPalavra.Text);
-                lista1.Remover(txtDica.Text);
+
                 // se não, manter como está
                 ExibirRegistroAtual();
             }
@@ -96,14 +93,9 @@ namespace apListaLigada
     {
       // solicitar ao usuário que escolha o arquivo de saída
       if (dlgAbrir.ShowDialog() == DialogResult.OK){
-          StreamWriter arquivo = new StreamWriter(dlgAbrir.FileName);
-          while(lista1.atual != null){
-              arquivo.WriteLine(lista1.Atual.Info);
-              lista1.Atual = lista1.Atual.Prox;
-          }
+                // percorrer a lista ligada e gravar seus dados no arquivo de saída
+                lista1.GravarDados(dlgAbrir.FileName);
       }
-
-      // percorrer a lista ligada e gravar seus dados no arquivo de saída
     }
 
     private void ExibirDados(ListaDupla<PalavraDica> aLista, ListBox lsb, Direcao qualDirecao)
