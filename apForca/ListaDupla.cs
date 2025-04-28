@@ -268,11 +268,13 @@ public class ListaDupla<Dado>
   {
     // Existe() encontrou intervalo de inclusão do novo nó (entre anterior e atual)
 
-    var novo = new NoDuplo<Dado>(dados);
-    anterior.Prox = novo;   // liga anterior ao novo
-    novo.Prox = atual;      // e novo no atual
+        var novo = new NoDuplo<Dado>(dados);
+        atual.Ant.Prox = novo;  // liga anterior ao novo
+        novo.Ant = atual.Ant;   // liga novo ao anterior
+        atual.Ant = novo;       // liga atual ao novo
+        novo.Prox = atual;      // e novo no atual
 
-    if (anterior == ultimo)  // se incluiu ao final da lista,
+    if (novo.Ant == ultimo)  // se incluiu ao final da lista,
        ultimo = novo;        // atualiza o apontador ultimo
     quantosNos++;            // incrementa número de nós da lista     	}	
   }
@@ -291,19 +293,21 @@ public class ListaDupla<Dado>
 
     if (atual == primeiro)
     {
-      primeiro = primeiro.Prox;
-      if (primeiro == null)  // removemos o único nó da lista
-        ultimo = null;
+            primeiro = primeiro.Prox;
+            primeiro.Ant = null;
+            if (primeiro == null)  // removemos o único nó da lista
+                ultimo = null;
     }
     else
       if (atual == ultimo)
-      {
-        anterior.Prox = null;   // desliga o último nó
-        ultimo = anterior;
+      { // desliga o último nó
+        atual.Ant.Prox = null;   
+        ultimo = atual.Ant;
       }
       else     // nó interno a ser excluido
       {
-        anterior.Prox = atual.Prox;
+            atual.Prox.Ant = atual.Ant;
+            atual.Ant.Prox = atual.Prox;
       }
 
     quantosNos--;
