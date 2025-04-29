@@ -16,30 +16,30 @@ public class ListaDupla<Dado>
 
   public void PosicionarNoInicio()
   {
-        atual = primeiro;
+        atual = Primeiro;
         numeroDoNoAtual = 0;
   }
 
   public void PosicionarNoFinal()
   {
-        atual = ultimo;
-        numeroDoNoAtual = quantosNos - 1;
+        atual = Ultimo;
+        numeroDoNoAtual = QuantosNos - 1;
   }
 
   public void Avancar()
   {
-        if (atual != ultimo)
+        if (atual != Ultimo)
         {
-            atual = atual.Prox;
+            atual = Atual.Prox;
             numeroDoNoAtual++;
         }
   }
 
   public void Retroceder()
   {
-        if (atual != ultimo)
+        if (atual != primeiro)
         {
-            atual = atual.Ant;
+            atual = Atual.Ant;
             numeroDoNoAtual--;
         }
   }
@@ -144,9 +144,13 @@ public class ListaDupla<Dado>
   {
     var novoNo = new NoDuplo<Dado>(novoDado);
 
-    if (EstaVazia)
-      primeiro = novoNo;
-    else
+    if (EstaVazia) 
+        {
+            primeiro = novoNo;
+            novoNo.Ant = null;
+        }
+
+        else
         {
             ultimo.Prox = novoNo;
             novoNo.Ant = ultimo;

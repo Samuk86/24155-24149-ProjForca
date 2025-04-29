@@ -33,7 +33,8 @@ namespace apListaLigada
                     // para cada linha, criar um objeto da classe de Palavra e Dica
                     // e inseri-lo no final da lista duplamente ligada
                     linha = arquivo.ReadLine();
-                    qualLista.InserirAposFim(new PalavraDica(linha));
+                    if (linha != "")
+                        qualLista.InserirAposFim(new PalavraDica(linha));
                 }
                 arquivo.Close();
             }
@@ -81,6 +82,23 @@ namespace apListaLigada
             {
                 // para o nó atualmente visitado e exibido na tela:
                 // perguntar ao usuário se realmente deseja excluir essa palavra e dica
+                DialogResult resultado = MessageBox.Show(
+                    "Deseja continuar?",           // Texto da mensagem
+                    "Confirmação",                 // Título da janela
+                    MessageBoxButtons.YesNo,       // Botões: Sim e Não
+                    MessageBoxIcon.Question        // Ícone de interrogação
+                    );
+
+                if (resultado == DialogResult.Yes)
+                {
+                    var palavraARemover = new PalavraDica(txtPalavra.Text, ".");
+                    lista1.Remover(palavraARemover);
+                }
+                else
+                {
+                    // Usuário clicou em Não
+                    MessageBox.Show("Palavra não removida!");
+                }
                 // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
 
                 // se não, manter como está
