@@ -214,7 +214,8 @@ namespace apListaLigada
 
     private void btnCancelar_Click(object sender, EventArgs e)
     {
-
+            txtPalavra.Text = lista1[lista1.NumeroDoNoAtual].Palavra;
+            txtDica.Text = lista1[lista1.NumeroDoNoAtual].Dica;
     }
 
     }
