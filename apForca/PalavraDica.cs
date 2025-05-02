@@ -20,7 +20,7 @@ public class PalavraDica : IComparable<PalavraDica>, IRegistro
     set
     {
       if (value != "")
-         palavra = value.PadLeft(tamanhoPalavra, '0').Substring(0, tamanhoPalavra);
+         palavra = value;
       else
         throw new Exception("Palavra vazia é inválida.");
     }
@@ -40,7 +40,7 @@ public class PalavraDica : IComparable<PalavraDica>, IRegistro
 
   public PalavraDica(string linhaDeDados)
   {
-        Palavra = linhaDeDados.Substring(inicioPalavra, tamanhoPalavra);
+        Palavra = linhaDeDados.Substring(inicioPalavra, tamanhoPalavra).Trim();
         Dica = linhaDeDados.Substring(inicioDica);
   }
   public PalavraDica(string palavra, string dica)
@@ -60,7 +60,7 @@ public class PalavraDica : IComparable<PalavraDica>, IRegistro
 
   public string FormatoDeArquivo()
   {
-    return $"{palavra}{dica}";
+    return $"{palavra.PadRight(tamanhoPalavra)}{dica}";
   }
 
 }
