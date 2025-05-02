@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Rafael Ferreira Rigo - 24149
+//Samuel Rosa Parra - 24155
+
+using System;
 
 public class NoDuplo<Dado> where Dado : IComparable<Dado>, IRegistro                                      
 {

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Rafael Ferreira Rigo - 24149
+//Samuel Rosa Parra - 24155
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -16,51 +19,50 @@ public class ListaDupla<Dado>
 
   public void PosicionarNoInicio()
   {
-        atual = Primeiro;
-        numeroDoNoAtual = 0;
+        atual = Primeiro;    // move o ponteiro atual
+        numeroDoNoAtual = 0; // define o indice do ponteiro
   }
 
   public void PosicionarNoFinal()
   {
-        atual = Ultimo;
-        numeroDoNoAtual = QuantosNos - 1;
-  }
+        atual = Ultimo;                   // move o ponteiro atual
+        numeroDoNoAtual = QuantosNos - 1; // define o indice do ponteiro
+    }
 
   public void Avancar()
   {
+        // verifica se está no final da lista, se não estiver, continua
         if (atual != Ultimo)
         {
-            atual = Atual.Prox;
-            numeroDoNoAtual++;
+            atual = Atual.Prox; // avança o ponteiro atual
+            numeroDoNoAtual++;  // incrementa o indice do ponteiro
         }
   }
 
   public void Retroceder()
   {
+        // verifica se está no começo da lista, se não estiver, continua
         if (atual != primeiro)
         {
-            atual = Atual.Ant;
-            numeroDoNoAtual--;
+            atual = Atual.Ant; // retrocede o ponteiro atual
+            numeroDoNoAtual--; // decrementa o indice do ponteiro
         }
   }
 
   public void PosicionarEm(int indice)
   {
-        // fica para vocês fazerem
-
         // verificar se indice é válido ( >= 0 && < quantosNos)
-        // se for valido:
-        //    atual aponta o primeiro nó;
-        //    percorre "indice" nós com o ponteiro atual sequencial
-        //      atualiza a variável numeroDoNoAtual
-
         if (indice >= 0 && indice < quantosNos)
         {
+        // se for valido:
+            // atual aponta o primeiro nó;
             atual = primeiro;
+            // percorre "indice" nós com o ponteiro atual sequencial
             for (int i = 0; i < indice; i++)
             {
                 atual = atual.Prox;
             }
+            // atualiza a variável numeroDoNoAtual
             numeroDoNoAtual = indice;
         }
   }
@@ -131,25 +133,27 @@ public class ListaDupla<Dado>
   {
     var novoNo = new NoDuplo<Dado>(novoDado);
 
+    // se a lista estiver vazia, o novo nó será o último
     if (EstaVazia)
        ultimo = novoNo;
 
-    novoNo.Prox = primeiro;
-    primeiro.Ant = novoNo;
-    primeiro    = novoNo;
-    quantosNos++;
+    novoNo.Prox = primeiro; // liga novo nó ao primeiro
+    primeiro.Ant = novoNo;  // liga primeiro ao novo nó
+    primeiro    = novoNo;   // define novo nó como primeiro
+    quantosNos++;           // incrementa contador de nós
   }
 
   public void InserirAposFim(Dado novoDado)
   {
     var novoNo = new NoDuplo<Dado>(novoDado);
 
-    if (EstaVazia) 
+        // se a lista estiver vazia, novo nó será o primeiro
+        if (EstaVazia) 
         {
             primeiro = novoNo;
             novoNo.Ant = null;
         }
-
+        // se não estiver, novó nó será o próximo do último
         else
         {
             ultimo.Prox = novoNo;
@@ -157,8 +161,8 @@ public class ListaDupla<Dado>
         }
       
 
-    ultimo = novoNo;
-    quantosNos++;
+    ultimo = novoNo; // define novo nó como último
+    quantosNos++;    // incrementa contador de nós
   }
 
   public void InserirAposFim(NoDuplo<Dado> noExistente)
@@ -182,7 +186,6 @@ public class ListaDupla<Dado>
 
   public bool Existe(Dado outroProcurado)
   {
-    atual.Ant = null;
     atual = primeiro;
 
     //	Em seguida, é verificado se a lista está vazia. Caso esteja, é
@@ -238,7 +241,6 @@ public class ListaDupla<Dado>
             // então a pesquisa continua, de maneira que o apontador
             // anterior deve apontar o nó atual e o apontador atual
             // deve seguir para o nó seguinte
-        //    anterior = atual;
             atual = atual.Prox;
           }
 
@@ -289,7 +291,7 @@ public class ListaDupla<Dado>
 
     if (novo.Ant == ultimo)  // se incluiu ao final da lista,
        ultimo = novo;        // atualiza o apontador ultimo
-    quantosNos++;            // incrementa número de nós da lista     	}	
+    quantosNos++;            // incrementa número de nós da lista	
   }
 
   public bool Remover(Dado dadoARemover)

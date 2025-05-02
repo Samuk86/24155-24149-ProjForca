@@ -92,3 +92,6 @@ C:\Users\samum\OneDrive\Documentos\GitHub\24155-24149-ProjForca\apForca\obj\Debu
 C:\Users\samum\OneDrive\Documentos\GitHub\24155-24149-ProjForca\apForca\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
 C:\Users\samum\OneDrive\Documentos\GitHub\24155-24149-ProjForca\apForca\obj\Debug\apListaLigada.exe
 C:\Users\samum\OneDrive\Documentos\GitHub\24155-24149-ProjForca\apForca\obj\Debug\apListaLigada.pdb
+C:\Users\RRigo\Documents\GitHub\24155-24149-ProjForca\apForca\bin\Debug\apListaLigada.exe.config
+C:\Users\RRigo\Documents\GitHub\24155-24149-ProjForca\apForca\bin\Debug\apListaLigada.exe
+C:\Users\RRigo\Documents\GitHub\24155-24149-ProjForca\apForca\bin\Debug\apListaLigada.pdb
