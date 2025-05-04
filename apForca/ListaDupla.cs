@@ -187,6 +187,7 @@ public class ListaDupla<Dado>
   public bool Existe(Dado outroProcurado)
   {
     atual = primeiro;
+    NumeroDoNoAtual = 0;
 
     //	Em seguida, é verificado se a lista está vazia. Caso esteja, é
     //	retornado false ao local de chamada, indicando que a chave não foi
@@ -242,6 +243,7 @@ public class ListaDupla<Dado>
             // anterior deve apontar o nó atual e o apontador atual
             // deve seguir para o nó seguinte
             atual = atual.Prox;
+            NumeroDoNoAtual++;
           }
 
     // por fim, caso a pesquisa tenha terminado, o apontador atual
