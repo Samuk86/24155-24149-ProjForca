@@ -217,6 +217,5 @@ namespace apListaLigada
             txtPalavra.Text = lista1[lista1.NumeroDoNoAtual].Palavra;
             txtDica.Text = lista1[lista1.NumeroDoNoAtual].Dica;
     }
-
     }
 }
