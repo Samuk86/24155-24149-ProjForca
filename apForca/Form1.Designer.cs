@@ -125,6 +125,13 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button39 = new System.Windows.Forms.Button();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -422,6 +429,13 @@
             // 
             // tpForca
             // 
+            this.tpForca.Controls.Add(this.label10);
+            this.tpForca.Controls.Add(this.checkBox2);
+            this.tpForca.Controls.Add(this.button39);
+            this.tpForca.Controls.Add(this.label9);
+            this.tpForca.Controls.Add(this.checkBox1);
+            this.tpForca.Controls.Add(this.label8);
+            this.tpForca.Controls.Add(this.label7);
             this.tpForca.Controls.Add(this.label6);
             this.tpForca.Controls.Add(this.button26);
             this.tpForca.Controls.Add(this.button27);
@@ -498,11 +512,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(419, 313);
+            this.label6.Location = new System.Drawing.Point(447, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 17);
+            this.label6.Size = new System.Drawing.Size(398, 17);
             this.label6.TabIndex = 83;
-            this.label6.Text = "Dica:";
+            this.label6.Text = "Dica: ____________________________________________";
             // 
             // button26
             // 
@@ -985,9 +999,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(415, 266);
+            this.dataGridView1.Location = new System.Drawing.Point(450, 266);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(463, 32);
+            this.dataGridView1.Size = new System.Drawing.Size(390, 32);
             this.dataGridView1.TabIndex = 0;
             // 
             // Forca_09
@@ -1117,6 +1131,71 @@
             this.slRegistro.Name = "slRegistro";
             this.slRegistro.Size = new System.Drawing.Size(70, 17);
             this.slRegistro.Text = "Registro:0/0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(447, 347);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 17);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Pontos: ____";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(447, 383);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 17);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "Erros: ____";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(589, 347);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(90, 21);
+            this.checkBox1.TabIndex = 86;
+            this.checkBox1.Text = "Com dica";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(584, 383);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 17);
+            this.label9.TabIndex = 87;
+            this.label9.Text = "Tempo restante: _____s";
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(765, 347);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(75, 23);
+            this.button39.TabIndex = 88;
+            this.button39.Text = "Iniciar";
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(450, 416);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(76, 21);
+            this.checkBox2.TabIndex = 89;
+            this.checkBox2.Text = "Arduino";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(585, 416);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 17);
+            this.label10.TabIndex = 90;
+            this.label10.Text = "Porta serial para arduino:";
             // 
             // FrmAlunos
             // 
@@ -1265,6 +1344,13 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 
