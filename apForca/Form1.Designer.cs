@@ -66,18 +66,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
+            this.btnHifen = new System.Windows.Forms.Button();
+            this.btnUAgudo = new System.Windows.Forms.Button();
+            this.btnOTil = new System.Windows.Forms.Button();
+            this.btnOCircunflexo = new System.Windows.Forms.Button();
+            this.btnOAgudo = new System.Windows.Forms.Button();
+            this.btnIAgudo = new System.Windows.Forms.Button();
+            this.btnECircunflexo = new System.Windows.Forms.Button();
+            this.btnEAgudo = new System.Windows.Forms.Button();
+            this.btnATil = new System.Windows.Forms.Button();
+            this.btnACircunflexo = new System.Windows.Forms.Button();
+            this.btnAAgudo = new System.Windows.Forms.Button();
+            this.btnCedilha = new System.Windows.Forms.Button();
             this.btnZ = new System.Windows.Forms.Button();
             this.btnY = new System.Windows.Forms.Button();
             this.btnX = new System.Windows.Forms.Button();
@@ -439,18 +439,18 @@
             this.tpForca.Controls.Add(this.label7);
             this.tpForca.Controls.Add(this.label6);
             this.tpForca.Controls.Add(this.button26);
-            this.tpForca.Controls.Add(this.button27);
-            this.tpForca.Controls.Add(this.button28);
-            this.tpForca.Controls.Add(this.button29);
-            this.tpForca.Controls.Add(this.button30);
-            this.tpForca.Controls.Add(this.button31);
-            this.tpForca.Controls.Add(this.button32);
-            this.tpForca.Controls.Add(this.button33);
-            this.tpForca.Controls.Add(this.button34);
-            this.tpForca.Controls.Add(this.button35);
-            this.tpForca.Controls.Add(this.button36);
-            this.tpForca.Controls.Add(this.button37);
-            this.tpForca.Controls.Add(this.button38);
+            this.tpForca.Controls.Add(this.btnHifen);
+            this.tpForca.Controls.Add(this.btnUAgudo);
+            this.tpForca.Controls.Add(this.btnOTil);
+            this.tpForca.Controls.Add(this.btnOCircunflexo);
+            this.tpForca.Controls.Add(this.btnOAgudo);
+            this.tpForca.Controls.Add(this.btnIAgudo);
+            this.tpForca.Controls.Add(this.btnECircunflexo);
+            this.tpForca.Controls.Add(this.btnEAgudo);
+            this.tpForca.Controls.Add(this.btnATil);
+            this.tpForca.Controls.Add(this.btnACircunflexo);
+            this.tpForca.Controls.Add(this.btnAAgudo);
+            this.tpForca.Controls.Add(this.btnCedilha);
             this.tpForca.Controls.Add(this.btnZ);
             this.tpForca.Controls.Add(this.btnY);
             this.tpForca.Controls.Add(this.btnX);
@@ -533,7 +533,7 @@
             // 
             this.btnIniciar.Location = new System.Drawing.Point(765, 347);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.Size = new System.Drawing.Size(75, 33);
             this.btnIniciar.TabIndex = 88;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
@@ -541,6 +541,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(584, 383);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(217, 22);
@@ -560,6 +561,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
             this.label8.Location = new System.Drawing.Point(447, 383);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 22);
@@ -569,6 +571,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Green;
             this.label7.Location = new System.Drawing.Point(447, 347);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 22);
@@ -578,11 +581,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Purple;
             this.label6.Location = new System.Drawing.Point(447, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(542, 22);
+            this.label6.Size = new System.Drawing.Size(399, 22);
             this.label6.TabIndex = 83;
-            this.label6.Text = "Dica: ____________________________________________";
+            this.label6.Text = "Dica: _______________________________";
             // 
             // button26
             // 
@@ -590,116 +594,116 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(30, 30);
             this.button26.TabIndex = 82;
-            this.button26.Text = "A";
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // btnHifen
             // 
-            this.button27.Location = new System.Drawing.Point(780, 226);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(30, 30);
-            this.button27.TabIndex = 81;
-            this.button27.Text = "A";
-            this.button27.UseVisualStyleBackColor = true;
+            this.btnHifen.Location = new System.Drawing.Point(780, 226);
+            this.btnHifen.Name = "btnHifen";
+            this.btnHifen.Size = new System.Drawing.Size(30, 30);
+            this.btnHifen.TabIndex = 81;
+            this.btnHifen.Text = "-";
+            this.btnHifen.UseVisualStyleBackColor = true;
             // 
-            // button28
+            // btnUAgudo
             // 
-            this.button28.Location = new System.Drawing.Point(750, 226);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(30, 30);
-            this.button28.TabIndex = 80;
-            this.button28.Text = "A";
-            this.button28.UseVisualStyleBackColor = true;
+            this.btnUAgudo.Location = new System.Drawing.Point(750, 226);
+            this.btnUAgudo.Name = "btnUAgudo";
+            this.btnUAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnUAgudo.TabIndex = 80;
+            this.btnUAgudo.Text = "Ú";
+            this.btnUAgudo.UseVisualStyleBackColor = true;
             // 
-            // button29
+            // btnOTil
             // 
-            this.button29.Location = new System.Drawing.Point(720, 226);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(30, 30);
-            this.button29.TabIndex = 79;
-            this.button29.Text = "A";
-            this.button29.UseVisualStyleBackColor = true;
+            this.btnOTil.Location = new System.Drawing.Point(720, 226);
+            this.btnOTil.Name = "btnOTil";
+            this.btnOTil.Size = new System.Drawing.Size(30, 30);
+            this.btnOTil.TabIndex = 79;
+            this.btnOTil.Text = "Õ";
+            this.btnOTil.UseVisualStyleBackColor = true;
             // 
-            // button30
+            // btnOCircunflexo
             // 
-            this.button30.Location = new System.Drawing.Point(690, 226);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(30, 30);
-            this.button30.TabIndex = 78;
-            this.button30.Text = "A";
-            this.button30.UseVisualStyleBackColor = true;
+            this.btnOCircunflexo.Location = new System.Drawing.Point(690, 226);
+            this.btnOCircunflexo.Name = "btnOCircunflexo";
+            this.btnOCircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnOCircunflexo.TabIndex = 78;
+            this.btnOCircunflexo.Text = "Ô";
+            this.btnOCircunflexo.UseVisualStyleBackColor = true;
             // 
-            // button31
+            // btnOAgudo
             // 
-            this.button31.Location = new System.Drawing.Point(660, 226);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(30, 30);
-            this.button31.TabIndex = 77;
-            this.button31.Text = "A";
-            this.button31.UseVisualStyleBackColor = true;
+            this.btnOAgudo.Location = new System.Drawing.Point(660, 226);
+            this.btnOAgudo.Name = "btnOAgudo";
+            this.btnOAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnOAgudo.TabIndex = 77;
+            this.btnOAgudo.Text = "Ó";
+            this.btnOAgudo.UseVisualStyleBackColor = true;
             // 
-            // button32
+            // btnIAgudo
             // 
-            this.button32.Location = new System.Drawing.Point(630, 226);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(30, 30);
-            this.button32.TabIndex = 76;
-            this.button32.Text = "A";
-            this.button32.UseVisualStyleBackColor = true;
+            this.btnIAgudo.Location = new System.Drawing.Point(630, 226);
+            this.btnIAgudo.Name = "btnIAgudo";
+            this.btnIAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnIAgudo.TabIndex = 76;
+            this.btnIAgudo.Text = "Í";
+            this.btnIAgudo.UseVisualStyleBackColor = true;
             // 
-            // button33
+            // btnECircunflexo
             // 
-            this.button33.Location = new System.Drawing.Point(600, 226);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(30, 30);
-            this.button33.TabIndex = 75;
-            this.button33.Text = "A";
-            this.button33.UseVisualStyleBackColor = true;
+            this.btnECircunflexo.Location = new System.Drawing.Point(600, 226);
+            this.btnECircunflexo.Name = "btnECircunflexo";
+            this.btnECircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnECircunflexo.TabIndex = 75;
+            this.btnECircunflexo.Text = "Ê";
+            this.btnECircunflexo.UseVisualStyleBackColor = true;
             // 
-            // button34
+            // btnEAgudo
             // 
-            this.button34.Location = new System.Drawing.Point(570, 226);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(30, 30);
-            this.button34.TabIndex = 74;
-            this.button34.Text = "A";
-            this.button34.UseVisualStyleBackColor = true;
+            this.btnEAgudo.Location = new System.Drawing.Point(570, 226);
+            this.btnEAgudo.Name = "btnEAgudo";
+            this.btnEAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnEAgudo.TabIndex = 74;
+            this.btnEAgudo.Text = "É";
+            this.btnEAgudo.UseVisualStyleBackColor = true;
             // 
-            // button35
+            // btnATil
             // 
-            this.button35.Location = new System.Drawing.Point(540, 226);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(30, 30);
-            this.button35.TabIndex = 73;
-            this.button35.Text = "A";
-            this.button35.UseVisualStyleBackColor = true;
+            this.btnATil.Location = new System.Drawing.Point(540, 226);
+            this.btnATil.Name = "btnATil";
+            this.btnATil.Size = new System.Drawing.Size(30, 30);
+            this.btnATil.TabIndex = 73;
+            this.btnATil.Text = "Ã";
+            this.btnATil.UseVisualStyleBackColor = true;
             // 
-            // button36
+            // btnACircunflexo
             // 
-            this.button36.Location = new System.Drawing.Point(510, 226);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(30, 30);
-            this.button36.TabIndex = 72;
-            this.button36.Text = "A";
-            this.button36.UseVisualStyleBackColor = true;
+            this.btnACircunflexo.Location = new System.Drawing.Point(510, 226);
+            this.btnACircunflexo.Name = "btnACircunflexo";
+            this.btnACircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnACircunflexo.TabIndex = 72;
+            this.btnACircunflexo.Text = "Â";
+            this.btnACircunflexo.UseVisualStyleBackColor = true;
             // 
-            // button37
+            // btnAAgudo
             // 
-            this.button37.Location = new System.Drawing.Point(480, 226);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(30, 30);
-            this.button37.TabIndex = 71;
-            this.button37.Text = "A";
-            this.button37.UseVisualStyleBackColor = true;
+            this.btnAAgudo.Location = new System.Drawing.Point(480, 226);
+            this.btnAAgudo.Name = "btnAAgudo";
+            this.btnAAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnAAgudo.TabIndex = 71;
+            this.btnAAgudo.Text = "Á";
+            this.btnAAgudo.UseVisualStyleBackColor = true;
+            this.btnAAgudo.Click += new System.EventHandler(this.button37_Click);
             // 
-            // button38
+            // btnCedilha
             // 
-            this.button38.Location = new System.Drawing.Point(450, 226);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(30, 30);
-            this.button38.TabIndex = 70;
-            this.button38.Text = "A";
-            this.button38.UseVisualStyleBackColor = true;
+            this.btnCedilha.Location = new System.Drawing.Point(450, 226);
+            this.btnCedilha.Name = "btnCedilha";
+            this.btnCedilha.Size = new System.Drawing.Size(30, 30);
+            this.btnCedilha.TabIndex = 70;
+            this.btnCedilha.Text = "Ç";
+            this.btnCedilha.UseVisualStyleBackColor = true;
             // 
             // btnZ
             // 
@@ -1018,7 +1022,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Curlz MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(514, 14);
+            this.label3.Location = new System.Drawing.Point(515, -7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(235, 106);
             this.label3.TabIndex = 39;
@@ -1314,18 +1318,18 @@
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button btnHifen;
+        private System.Windows.Forms.Button btnUAgudo;
+        private System.Windows.Forms.Button btnOTil;
+        private System.Windows.Forms.Button btnOCircunflexo;
+        private System.Windows.Forms.Button btnOAgudo;
+        private System.Windows.Forms.Button btnIAgudo;
+        private System.Windows.Forms.Button btnECircunflexo;
+        private System.Windows.Forms.Button btnEAgudo;
+        private System.Windows.Forms.Button btnATil;
+        private System.Windows.Forms.Button btnACircunflexo;
+        private System.Windows.Forms.Button btnAAgudo;
+        private System.Windows.Forms.Button btnCedilha;
         private System.Windows.Forms.Button btnZ;
         private System.Windows.Forms.Button btnY;
         private System.Windows.Forms.Button btnX;
