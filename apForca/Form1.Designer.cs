@@ -46,122 +46,122 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tpListagem = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbFrente = new System.Windows.Forms.RadioButton();
             this.rbTras = new System.Windows.Forms.RadioButton();
+            this.rbFrente = new System.Windows.Forms.RadioButton();
+            this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpCadastro = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
             this.label2 = new System.Windows.Forms.Label();
-            this.lsbDados = new System.Windows.Forms.ListBox();
-            this.txtDica = new System.Windows.Forms.TextBox();
             this.txtPalavra = new System.Windows.Forms.TextBox();
+            this.txtDica = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tpForca = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.chkArduino = new System.Windows.Forms.CheckBox();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.chkDica = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbDica = new System.Windows.Forms.Label();
+            this.button26 = new System.Windows.Forms.Button();
+            this.btnHifen = new System.Windows.Forms.Button();
+            this.btnUAgudo = new System.Windows.Forms.Button();
+            this.btnOTil = new System.Windows.Forms.Button();
+            this.btnOCircunflexo = new System.Windows.Forms.Button();
+            this.btnOAgudo = new System.Windows.Forms.Button();
+            this.btnIAgudo = new System.Windows.Forms.Button();
+            this.btnECircunflexo = new System.Windows.Forms.Button();
+            this.btnEAgudo = new System.Windows.Forms.Button();
+            this.btnATil = new System.Windows.Forms.Button();
+            this.btnACircunflexo = new System.Windows.Forms.Button();
+            this.btnAAgudo = new System.Windows.Forms.Button();
+            this.btnCedilha = new System.Windows.Forms.Button();
+            this.btnZ = new System.Windows.Forms.Button();
+            this.btnY = new System.Windows.Forms.Button();
+            this.btnX = new System.Windows.Forms.Button();
+            this.btnW = new System.Windows.Forms.Button();
+            this.btnV = new System.Windows.Forms.Button();
+            this.btnU = new System.Windows.Forms.Button();
+            this.btnT = new System.Windows.Forms.Button();
+            this.btnS = new System.Windows.Forms.Button();
+            this.btnR = new System.Windows.Forms.Button();
+            this.btnQ = new System.Windows.Forms.Button();
+            this.btnP = new System.Windows.Forms.Button();
+            this.btnO = new System.Windows.Forms.Button();
+            this.btnN = new System.Windows.Forms.Button();
+            this.btnM = new System.Windows.Forms.Button();
+            this.btnL = new System.Windows.Forms.Button();
+            this.btnK = new System.Windows.Forms.Button();
+            this.btnJ = new System.Windows.Forms.Button();
+            this.btnI = new System.Windows.Forms.Button();
+            this.btnH = new System.Windows.Forms.Button();
+            this.btnG = new System.Windows.Forms.Button();
+            this.btnF = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
+            this.btnD = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
+            this.btnB = new System.Windows.Forms.Button();
+            this.btnA = new System.Windows.Forms.Button();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.Personagem_14 = new System.Windows.Forms.PictureBox();
+            this.Personagem_10 = new System.Windows.Forms.PictureBox();
+            this.Personagem_09 = new System.Windows.Forms.PictureBox();
+            this.Add_08 = new System.Windows.Forms.PictureBox();
+            this.Personagem_1_05 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Personagem_17 = new System.Windows.Forms.PictureBox();
+            this.Personagem_16 = new System.Windows.Forms.PictureBox();
+            this.Add_2_04 = new System.Windows.Forms.PictureBox();
+            this.Forca_13 = new System.Windows.Forms.PictureBox();
+            this.dgvForca = new System.Windows.Forms.DataGridView();
+            this.Forca_09 = new System.Windows.Forms.PictureBox();
+            this.Forca_08 = new System.Windows.Forms.PictureBox();
+            this.Add_2_07 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.Personagem_05 = new System.Windows.Forms.PictureBox();
+            this.Forca_05 = new System.Windows.Forms.PictureBox();
+            this.Forca_02 = new System.Windows.Forms.PictureBox();
+            this.Enforcado = new System.Windows.Forms.PictureBox();
+            this.Add_2_03 = new System.Windows.Forms.PictureBox();
+            this.Forca_03 = new System.Windows.Forms.PictureBox();
+            this.Forca_01 = new System.Windows.Forms.PictureBox();
+            this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
             this.dlgSalvar = new System.Windows.Forms.SaveFileDialog();
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Forca_01 = new System.Windows.Forms.PictureBox();
-            this.Forca_03 = new System.Windows.Forms.PictureBox();
-            this.Add_2_03 = new System.Windows.Forms.PictureBox();
-            this.Enforcado = new System.Windows.Forms.PictureBox();
-            this.Forca_02 = new System.Windows.Forms.PictureBox();
-            this.Forca_05 = new System.Windows.Forms.PictureBox();
-            this.Personagem_05 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.Add_2_07 = new System.Windows.Forms.PictureBox();
-            this.Forca_08 = new System.Windows.Forms.PictureBox();
-            this.Forca_09 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Forca_13 = new System.Windows.Forms.PictureBox();
-            this.Add_2_04 = new System.Windows.Forms.PictureBox();
-            this.Personagem_16 = new System.Windows.Forms.PictureBox();
-            this.Personagem_17 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Personagem_1_05 = new System.Windows.Forms.PictureBox();
-            this.Add_08 = new System.Windows.Forms.PictureBox();
-            this.Personagem_09 = new System.Windows.Forms.PictureBox();
-            this.Personagem_10 = new System.Windows.Forms.PictureBox();
-            this.Personagem_14 = new System.Windows.Forms.PictureBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.btnA = new System.Windows.Forms.Button();
-            this.btnB = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
-            this.btnD = new System.Windows.Forms.Button();
-            this.btnE = new System.Windows.Forms.Button();
-            this.btnF = new System.Windows.Forms.Button();
-            this.btnG = new System.Windows.Forms.Button();
-            this.btnH = new System.Windows.Forms.Button();
-            this.btnI = new System.Windows.Forms.Button();
-            this.btnJ = new System.Windows.Forms.Button();
-            this.btnK = new System.Windows.Forms.Button();
-            this.btnL = new System.Windows.Forms.Button();
-            this.btnM = new System.Windows.Forms.Button();
-            this.btnN = new System.Windows.Forms.Button();
-            this.btnO = new System.Windows.Forms.Button();
-            this.btnP = new System.Windows.Forms.Button();
-            this.btnQ = new System.Windows.Forms.Button();
-            this.btnR = new System.Windows.Forms.Button();
-            this.btnS = new System.Windows.Forms.Button();
-            this.btnT = new System.Windows.Forms.Button();
-            this.btnU = new System.Windows.Forms.Button();
-            this.btnV = new System.Windows.Forms.Button();
-            this.btnW = new System.Windows.Forms.Button();
-            this.btnX = new System.Windows.Forms.Button();
-            this.btnY = new System.Windows.Forms.Button();
-            this.btnZ = new System.Windows.Forms.Button();
-            this.btnCedilha = new System.Windows.Forms.Button();
-            this.btnAAgudo = new System.Windows.Forms.Button();
-            this.btnACircunflexo = new System.Windows.Forms.Button();
-            this.btnATil = new System.Windows.Forms.Button();
-            this.btnEAgudo = new System.Windows.Forms.Button();
-            this.btnECircunflexo = new System.Windows.Forms.Button();
-            this.btnIAgudo = new System.Windows.Forms.Button();
-            this.btnOAgudo = new System.Windows.Forms.Button();
-            this.btnOCircunflexo = new System.Windows.Forms.Button();
-            this.btnOTil = new System.Windows.Forms.Button();
-            this.btnUAgudo = new System.Windows.Forms.Button();
-            this.btnHifen = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.chkDica = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.chkArduino = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tpForca = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.tpListagem.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Enforcado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_1_05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_14)).BeginInit();
             this.tpForca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_1_05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvForca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Enforcado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_01)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnInicio
@@ -306,10 +306,10 @@
             // 
             this.tpListagem.Controls.Add(this.groupBox1);
             this.tpListagem.Controls.Add(this.lsbDados);
-            this.tpListagem.Location = new System.Drawing.Point(4, 26);
+            this.tpListagem.Location = new System.Drawing.Point(4, 22);
             this.tpListagem.Name = "tpListagem";
             this.tpListagem.Padding = new System.Windows.Forms.Padding(3);
-            this.tpListagem.Size = new System.Drawing.Size(896, 519);
+            this.tpListagem.Size = new System.Drawing.Size(896, 523);
             this.tpListagem.TabIndex = 1;
             this.tpListagem.Text = "Listagem";
             this.tpListagem.UseVisualStyleBackColor = true;
@@ -325,6 +325,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ordem";
             // 
+            // rbTras
+            // 
+            this.rbTras.AutoSize = true;
+            this.rbTras.Location = new System.Drawing.Point(121, 22);
+            this.rbTras.Name = "rbTras";
+            this.rbTras.Size = new System.Drawing.Size(110, 21);
+            this.rbTras.TabIndex = 1;
+            this.rbTras.Text = "Decrescente";
+            this.rbTras.UseVisualStyleBackColor = true;
+            this.rbTras.Click += new System.EventHandler(this.rbTras_Click);
+            // 
             // rbFrente
             // 
             this.rbFrente.AutoSize = true;
@@ -338,16 +349,14 @@
             this.rbFrente.UseVisualStyleBackColor = true;
             this.rbFrente.Click += new System.EventHandler(this.rbFrente_Click);
             // 
-            // rbTras
+            // lsbDados
             // 
-            this.rbTras.AutoSize = true;
-            this.rbTras.Location = new System.Drawing.Point(121, 22);
-            this.rbTras.Name = "rbTras";
-            this.rbTras.Size = new System.Drawing.Size(110, 21);
-            this.rbTras.TabIndex = 1;
-            this.rbTras.Text = "Decrescente";
-            this.rbTras.UseVisualStyleBackColor = true;
-            this.rbTras.Click += new System.EventHandler(this.rbTras_Click);
+            this.lsbDados.FormattingEnabled = true;
+            this.lsbDados.ItemHeight = 17;
+            this.lsbDados.Location = new System.Drawing.Point(7, 62);
+            this.lsbDados.Name = "lsbDados";
+            this.lsbDados.Size = new System.Drawing.Size(596, 208);
+            this.lsbDados.TabIndex = 0;
             // 
             // tpCadastro
             // 
@@ -372,6 +381,30 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Palavra:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Dica:";
+            // 
+            // txtPalavra
+            // 
+            this.txtPalavra.Location = new System.Drawing.Point(79, 18);
+            this.txtPalavra.MaxLength = 30;
+            this.txtPalavra.Name = "txtPalavra";
+            this.txtPalavra.Size = new System.Drawing.Size(207, 24);
+            this.txtPalavra.TabIndex = 3;
+            // 
+            // txtDica
+            // 
+            this.txtDica.Location = new System.Drawing.Point(79, 48);
+            this.txtDica.Name = "txtDica";
+            this.txtDica.Size = new System.Drawing.Size(524, 24);
+            this.txtDica.TabIndex = 4;
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -387,744 +420,6 @@
             this.tabControl1.TabIndex = 22;
             this.tabControl1.Enter += new System.EventHandler(this.tabControl1_Enter);
             // 
-            // dlgAbrir
-            // 
-            this.dlgAbrir.DefaultExt = "*.txt";
-            this.dlgAbrir.Filter = "Arquivos de texto|*.txt|Qualquer arquivo|*.*";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Dica:";
-            // 
-            // lsbDados
-            // 
-            this.lsbDados.FormattingEnabled = true;
-            this.lsbDados.ItemHeight = 17;
-            this.lsbDados.Location = new System.Drawing.Point(7, 62);
-            this.lsbDados.Name = "lsbDados";
-            this.lsbDados.Size = new System.Drawing.Size(596, 208);
-            this.lsbDados.TabIndex = 0;
-            // 
-            // txtDica
-            // 
-            this.txtDica.Location = new System.Drawing.Point(79, 48);
-            this.txtDica.Name = "txtDica";
-            this.txtDica.Size = new System.Drawing.Size(524, 24);
-            this.txtDica.TabIndex = 4;
-            // 
-            // txtPalavra
-            // 
-            this.txtPalavra.Location = new System.Drawing.Point(79, 18);
-            this.txtPalavra.MaxLength = 30;
-            this.txtPalavra.Name = "txtPalavra";
-            this.txtPalavra.Size = new System.Drawing.Size(207, 24);
-            this.txtPalavra.TabIndex = 3;
-            // 
-            // dlgSalvar
-            // 
-            this.dlgSalvar.DefaultExt = "*.txt";
-            this.dlgSalvar.Title = "Selecione o arquivo para gravação dos dados";
-            // 
-            // slRegistro
-            // 
-            this.slRegistro.Name = "slRegistro";
-            this.slRegistro.Size = new System.Drawing.Size(70, 17);
-            this.slRegistro.Text = "Registro:0/0";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.slRegistro});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 610);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(921, 22);
-            this.statusStrip1.TabIndex = 23;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 17);
-            this.toolStripStatusLabel1.Text = "Mensagem:";
-            // 
-            // Forca_01
-            // 
-            this.Forca_01.Image = ((System.Drawing.Image)(resources.GetObject("Forca_01.Image")));
-            this.Forca_01.Location = new System.Drawing.Point(36, 38);
-            this.Forca_01.Name = "Forca_01";
-            this.Forca_01.Size = new System.Drawing.Size(128, 61);
-            this.Forca_01.TabIndex = 2;
-            this.Forca_01.TabStop = false;
-            // 
-            // Forca_03
-            // 
-            this.Forca_03.Image = ((System.Drawing.Image)(resources.GetObject("Forca_03.Image")));
-            this.Forca_03.Location = new System.Drawing.Point(36, 91);
-            this.Forca_03.Name = "Forca_03";
-            this.Forca_03.Size = new System.Drawing.Size(100, 191);
-            this.Forca_03.TabIndex = 3;
-            this.Forca_03.TabStop = false;
-            // 
-            // Add_2_03
-            // 
-            this.Add_2_03.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_2_03.BackgroundImage")));
-            this.Add_2_03.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_03.Image")));
-            this.Add_2_03.Location = new System.Drawing.Point(36, 92);
-            this.Add_2_03.Name = "Add_2_03";
-            this.Add_2_03.Size = new System.Drawing.Size(70, 88);
-            this.Add_2_03.TabIndex = 28;
-            this.Add_2_03.TabStop = false;
-            this.Add_2_03.Visible = false;
-            // 
-            // Enforcado
-            // 
-            this.Enforcado.Image = ((System.Drawing.Image)(resources.GetObject("Enforcado.Image")));
-            this.Enforcado.Location = new System.Drawing.Point(253, 3);
-            this.Enforcado.Name = "Enforcado";
-            this.Enforcado.Size = new System.Drawing.Size(160, 337);
-            this.Enforcado.TabIndex = 42;
-            this.Enforcado.TabStop = false;
-            this.Enforcado.Visible = false;
-            // 
-            // Forca_02
-            // 
-            this.Forca_02.Image = ((System.Drawing.Image)(resources.GetObject("Forca_02.Image")));
-            this.Forca_02.Location = new System.Drawing.Point(161, 38);
-            this.Forca_02.Name = "Forca_02";
-            this.Forca_02.Size = new System.Drawing.Size(100, 58);
-            this.Forca_02.TabIndex = 4;
-            this.Forca_02.TabStop = false;
-            // 
-            // Forca_05
-            // 
-            this.Forca_05.Image = ((System.Drawing.Image)(resources.GetObject("Forca_05.Image")));
-            this.Forca_05.Location = new System.Drawing.Point(152, 87);
-            this.Forca_05.Name = "Forca_05";
-            this.Forca_05.Size = new System.Drawing.Size(100, 99);
-            this.Forca_05.TabIndex = 24;
-            this.Forca_05.TabStop = false;
-            // 
-            // Personagem_05
-            // 
-            this.Personagem_05.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_05.Image")));
-            this.Personagem_05.Location = new System.Drawing.Point(152, 86);
-            this.Personagem_05.Name = "Personagem_05";
-            this.Personagem_05.Size = new System.Drawing.Size(100, 95);
-            this.Personagem_05.TabIndex = 31;
-            this.Personagem_05.TabStop = false;
-            this.Personagem_05.Visible = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(103, 181);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox13.TabIndex = 32;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Visible = false;
-            // 
-            // Add_2_07
-            // 
-            this.Add_2_07.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_07.Image")));
-            this.Add_2_07.Location = new System.Drawing.Point(103, 181);
-            this.Add_2_07.Name = "Add_2_07";
-            this.Add_2_07.Size = new System.Drawing.Size(59, 50);
-            this.Add_2_07.TabIndex = 30;
-            this.Add_2_07.TabStop = false;
-            this.Add_2_07.Visible = false;
-            // 
-            // Forca_08
-            // 
-            this.Forca_08.Image = ((System.Drawing.Image)(resources.GetObject("Forca_08.Image")));
-            this.Forca_08.Location = new System.Drawing.Point(161, 181);
-            this.Forca_08.Name = "Forca_08";
-            this.Forca_08.Size = new System.Drawing.Size(100, 23);
-            this.Forca_08.TabIndex = 25;
-            this.Forca_08.TabStop = false;
-            // 
-            // Forca_09
-            // 
-            this.Forca_09.Image = ((System.Drawing.Image)(resources.GetObject("Forca_09.Image")));
-            this.Forca_09.Location = new System.Drawing.Point(161, 197);
-            this.Forca_09.Name = "Forca_09";
-            this.Forca_09.Size = new System.Drawing.Size(100, 50);
-            this.Forca_09.TabIndex = 26;
-            this.Forca_09.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(450, 266);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(390, 32);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Forca_13
-            // 
-            this.Forca_13.Image = ((System.Drawing.Image)(resources.GetObject("Forca_13.Image")));
-            this.Forca_13.Location = new System.Drawing.Point(36, 279);
-            this.Forca_13.Name = "Forca_13";
-            this.Forca_13.Size = new System.Drawing.Size(100, 165);
-            this.Forca_13.TabIndex = 1;
-            this.Forca_13.TabStop = false;
-            // 
-            // Add_2_04
-            // 
-            this.Add_2_04.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_04.Image")));
-            this.Add_2_04.Location = new System.Drawing.Point(104, 93);
-            this.Add_2_04.Name = "Add_2_04";
-            this.Add_2_04.Size = new System.Drawing.Size(25, 88);
-            this.Add_2_04.TabIndex = 29;
-            this.Add_2_04.TabStop = false;
-            this.Add_2_04.Visible = false;
-            // 
-            // Personagem_16
-            // 
-            this.Personagem_16.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_16.Image")));
-            this.Personagem_16.Location = new System.Drawing.Point(127, 330);
-            this.Personagem_16.Name = "Personagem_16";
-            this.Personagem_16.Size = new System.Drawing.Size(69, 79);
-            this.Personagem_16.TabIndex = 37;
-            this.Personagem_16.TabStop = false;
-            this.Personagem_16.Visible = false;
-            // 
-            // Personagem_17
-            // 
-            this.Personagem_17.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_17.Image")));
-            this.Personagem_17.Location = new System.Drawing.Point(195, 330);
-            this.Personagem_17.Name = "Personagem_17";
-            this.Personagem_17.Size = new System.Drawing.Size(100, 93);
-            this.Personagem_17.TabIndex = 38;
-            this.Personagem_17.TabStop = false;
-            this.Personagem_17.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Curlz MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(515, -7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 85);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Forca!";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(508, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 27);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Adivinhe a palavra!";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(456, 141);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 17);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "Seu nome:";
-            // 
-            // Personagem_1_05
-            // 
-            this.Personagem_1_05.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_1_05.Image")));
-            this.Personagem_1_05.Location = new System.Drawing.Point(152, 87);
-            this.Personagem_1_05.Name = "Personagem_1_05";
-            this.Personagem_1_05.Size = new System.Drawing.Size(105, 96);
-            this.Personagem_1_05.TabIndex = 27;
-            this.Personagem_1_05.TabStop = false;
-            this.Personagem_1_05.Visible = false;
-            // 
-            // Add_08
-            // 
-            this.Add_08.Image = ((System.Drawing.Image)(resources.GetObject("Add_08.Image")));
-            this.Add_08.Location = new System.Drawing.Point(161, 181);
-            this.Add_08.Name = "Add_08";
-            this.Add_08.Size = new System.Drawing.Size(100, 50);
-            this.Add_08.TabIndex = 33;
-            this.Add_08.TabStop = false;
-            this.Add_08.Visible = false;
-            // 
-            // Personagem_09
-            // 
-            this.Personagem_09.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_09.Image")));
-            this.Personagem_09.Location = new System.Drawing.Point(160, 197);
-            this.Personagem_09.Name = "Personagem_09";
-            this.Personagem_09.Size = new System.Drawing.Size(100, 85);
-            this.Personagem_09.TabIndex = 34;
-            this.Personagem_09.TabStop = false;
-            this.Personagem_09.Visible = false;
-            // 
-            // Personagem_10
-            // 
-            this.Personagem_10.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_10.Image")));
-            this.Personagem_10.Location = new System.Drawing.Point(222, 197);
-            this.Personagem_10.Name = "Personagem_10";
-            this.Personagem_10.Size = new System.Drawing.Size(100, 59);
-            this.Personagem_10.TabIndex = 35;
-            this.Personagem_10.TabStop = false;
-            this.Personagem_10.Visible = false;
-            // 
-            // Personagem_14
-            // 
-            this.Personagem_14.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_14.Image")));
-            this.Personagem_14.Location = new System.Drawing.Point(161, 279);
-            this.Personagem_14.Name = "Personagem_14";
-            this.Personagem_14.Size = new System.Drawing.Size(100, 51);
-            this.Personagem_14.TabIndex = 36;
-            this.Personagem_14.TabStop = false;
-            this.Personagem_14.Visible = false;
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(564, 138);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(173, 24);
-            this.txtNome.TabIndex = 43;
-            // 
-            // btnA
-            // 
-            this.btnA.Location = new System.Drawing.Point(450, 163);
-            this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(30, 30);
-            this.btnA.TabIndex = 44;
-            this.btnA.Text = "A";
-            this.btnA.UseVisualStyleBackColor = true;
-            // 
-            // btnB
-            // 
-            this.btnB.Location = new System.Drawing.Point(480, 163);
-            this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(30, 30);
-            this.btnB.TabIndex = 45;
-            this.btnB.Text = "B";
-            this.btnB.UseVisualStyleBackColor = true;
-            // 
-            // btnC
-            // 
-            this.btnC.Location = new System.Drawing.Point(510, 163);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(30, 30);
-            this.btnC.TabIndex = 46;
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = true;
-            // 
-            // btnD
-            // 
-            this.btnD.Location = new System.Drawing.Point(540, 163);
-            this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(30, 30);
-            this.btnD.TabIndex = 47;
-            this.btnD.Text = "D";
-            this.btnD.UseVisualStyleBackColor = true;
-            // 
-            // btnE
-            // 
-            this.btnE.Location = new System.Drawing.Point(570, 163);
-            this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(30, 30);
-            this.btnE.TabIndex = 48;
-            this.btnE.Text = "E";
-            this.btnE.UseVisualStyleBackColor = true;
-            // 
-            // btnF
-            // 
-            this.btnF.Location = new System.Drawing.Point(600, 163);
-            this.btnF.Name = "btnF";
-            this.btnF.Size = new System.Drawing.Size(30, 30);
-            this.btnF.TabIndex = 49;
-            this.btnF.Text = "F";
-            this.btnF.UseVisualStyleBackColor = true;
-            // 
-            // btnG
-            // 
-            this.btnG.Location = new System.Drawing.Point(630, 163);
-            this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(30, 30);
-            this.btnG.TabIndex = 50;
-            this.btnG.Text = "Gx";
-            this.btnG.UseVisualStyleBackColor = true;
-            this.btnG.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnH
-            // 
-            this.btnH.Location = new System.Drawing.Point(660, 163);
-            this.btnH.Name = "btnH";
-            this.btnH.Size = new System.Drawing.Size(30, 30);
-            this.btnH.TabIndex = 51;
-            this.btnH.Text = "H";
-            this.btnH.UseVisualStyleBackColor = true;
-            // 
-            // btnI
-            // 
-            this.btnI.Location = new System.Drawing.Point(690, 163);
-            this.btnI.Name = "btnI";
-            this.btnI.Size = new System.Drawing.Size(30, 30);
-            this.btnI.TabIndex = 52;
-            this.btnI.Text = "I";
-            this.btnI.UseVisualStyleBackColor = true;
-            // 
-            // btnJ
-            // 
-            this.btnJ.Location = new System.Drawing.Point(720, 163);
-            this.btnJ.Name = "btnJ";
-            this.btnJ.Size = new System.Drawing.Size(30, 30);
-            this.btnJ.TabIndex = 53;
-            this.btnJ.Text = "J";
-            this.btnJ.UseVisualStyleBackColor = true;
-            // 
-            // btnK
-            // 
-            this.btnK.Location = new System.Drawing.Point(750, 163);
-            this.btnK.Name = "btnK";
-            this.btnK.Size = new System.Drawing.Size(30, 30);
-            this.btnK.TabIndex = 54;
-            this.btnK.Text = "K";
-            this.btnK.UseVisualStyleBackColor = true;
-            // 
-            // btnL
-            // 
-            this.btnL.Location = new System.Drawing.Point(780, 163);
-            this.btnL.Name = "btnL";
-            this.btnL.Size = new System.Drawing.Size(30, 30);
-            this.btnL.TabIndex = 55;
-            this.btnL.Text = "L";
-            this.btnL.UseVisualStyleBackColor = true;
-            // 
-            // btnM
-            // 
-            this.btnM.Location = new System.Drawing.Point(810, 163);
-            this.btnM.Name = "btnM";
-            this.btnM.Size = new System.Drawing.Size(30, 30);
-            this.btnM.TabIndex = 56;
-            this.btnM.Text = "M";
-            this.btnM.UseVisualStyleBackColor = true;
-            // 
-            // btnN
-            // 
-            this.btnN.Location = new System.Drawing.Point(450, 194);
-            this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(30, 30);
-            this.btnN.TabIndex = 57;
-            this.btnN.Text = "N";
-            this.btnN.UseVisualStyleBackColor = true;
-            // 
-            // btnO
-            // 
-            this.btnO.Location = new System.Drawing.Point(480, 194);
-            this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(30, 30);
-            this.btnO.TabIndex = 58;
-            this.btnO.Text = "O";
-            this.btnO.UseVisualStyleBackColor = true;
-            // 
-            // btnP
-            // 
-            this.btnP.Location = new System.Drawing.Point(510, 194);
-            this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(30, 30);
-            this.btnP.TabIndex = 59;
-            this.btnP.Text = "P";
-            this.btnP.UseVisualStyleBackColor = true;
-            // 
-            // btnQ
-            // 
-            this.btnQ.Location = new System.Drawing.Point(540, 194);
-            this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(30, 30);
-            this.btnQ.TabIndex = 60;
-            this.btnQ.Text = "Q";
-            this.btnQ.UseVisualStyleBackColor = true;
-            // 
-            // btnR
-            // 
-            this.btnR.Location = new System.Drawing.Point(570, 194);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(30, 30);
-            this.btnR.TabIndex = 61;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = true;
-            // 
-            // btnS
-            // 
-            this.btnS.Location = new System.Drawing.Point(600, 194);
-            this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(30, 30);
-            this.btnS.TabIndex = 62;
-            this.btnS.Text = "S";
-            this.btnS.UseVisualStyleBackColor = true;
-            // 
-            // btnT
-            // 
-            this.btnT.Location = new System.Drawing.Point(630, 194);
-            this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(30, 30);
-            this.btnT.TabIndex = 63;
-            this.btnT.Text = "T";
-            this.btnT.UseVisualStyleBackColor = true;
-            // 
-            // btnU
-            // 
-            this.btnU.Location = new System.Drawing.Point(660, 194);
-            this.btnU.Name = "btnU";
-            this.btnU.Size = new System.Drawing.Size(30, 30);
-            this.btnU.TabIndex = 64;
-            this.btnU.Text = "U";
-            this.btnU.UseVisualStyleBackColor = true;
-            // 
-            // btnV
-            // 
-            this.btnV.Location = new System.Drawing.Point(690, 194);
-            this.btnV.Name = "btnV";
-            this.btnV.Size = new System.Drawing.Size(30, 30);
-            this.btnV.TabIndex = 65;
-            this.btnV.Text = "V";
-            this.btnV.UseVisualStyleBackColor = true;
-            // 
-            // btnW
-            // 
-            this.btnW.Location = new System.Drawing.Point(720, 194);
-            this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(30, 30);
-            this.btnW.TabIndex = 66;
-            this.btnW.Text = "W";
-            this.btnW.UseVisualStyleBackColor = true;
-            // 
-            // btnX
-            // 
-            this.btnX.Location = new System.Drawing.Point(750, 194);
-            this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(30, 30);
-            this.btnX.TabIndex = 67;
-            this.btnX.Text = "X";
-            this.btnX.UseVisualStyleBackColor = true;
-            // 
-            // btnY
-            // 
-            this.btnY.Location = new System.Drawing.Point(780, 194);
-            this.btnY.Name = "btnY";
-            this.btnY.Size = new System.Drawing.Size(30, 30);
-            this.btnY.TabIndex = 68;
-            this.btnY.Text = "Y";
-            this.btnY.UseVisualStyleBackColor = true;
-            // 
-            // btnZ
-            // 
-            this.btnZ.Location = new System.Drawing.Point(810, 194);
-            this.btnZ.Name = "btnZ";
-            this.btnZ.Size = new System.Drawing.Size(30, 30);
-            this.btnZ.TabIndex = 69;
-            this.btnZ.Text = "Z";
-            this.btnZ.UseVisualStyleBackColor = true;
-            // 
-            // btnCedilha
-            // 
-            this.btnCedilha.Location = new System.Drawing.Point(450, 226);
-            this.btnCedilha.Name = "btnCedilha";
-            this.btnCedilha.Size = new System.Drawing.Size(30, 30);
-            this.btnCedilha.TabIndex = 70;
-            this.btnCedilha.Text = "Ç";
-            this.btnCedilha.UseVisualStyleBackColor = true;
-            // 
-            // btnAAgudo
-            // 
-            this.btnAAgudo.Location = new System.Drawing.Point(480, 226);
-            this.btnAAgudo.Name = "btnAAgudo";
-            this.btnAAgudo.Size = new System.Drawing.Size(30, 30);
-            this.btnAAgudo.TabIndex = 71;
-            this.btnAAgudo.Text = "Á";
-            this.btnAAgudo.UseVisualStyleBackColor = true;
-            this.btnAAgudo.Click += new System.EventHandler(this.button37_Click);
-            // 
-            // btnACircunflexo
-            // 
-            this.btnACircunflexo.Location = new System.Drawing.Point(510, 226);
-            this.btnACircunflexo.Name = "btnACircunflexo";
-            this.btnACircunflexo.Size = new System.Drawing.Size(30, 30);
-            this.btnACircunflexo.TabIndex = 72;
-            this.btnACircunflexo.Text = "Â";
-            this.btnACircunflexo.UseVisualStyleBackColor = true;
-            // 
-            // btnATil
-            // 
-            this.btnATil.Location = new System.Drawing.Point(540, 226);
-            this.btnATil.Name = "btnATil";
-            this.btnATil.Size = new System.Drawing.Size(30, 30);
-            this.btnATil.TabIndex = 73;
-            this.btnATil.Text = "Ã";
-            this.btnATil.UseVisualStyleBackColor = true;
-            // 
-            // btnEAgudo
-            // 
-            this.btnEAgudo.Location = new System.Drawing.Point(570, 226);
-            this.btnEAgudo.Name = "btnEAgudo";
-            this.btnEAgudo.Size = new System.Drawing.Size(30, 30);
-            this.btnEAgudo.TabIndex = 74;
-            this.btnEAgudo.Text = "É";
-            this.btnEAgudo.UseVisualStyleBackColor = true;
-            // 
-            // btnECircunflexo
-            // 
-            this.btnECircunflexo.Location = new System.Drawing.Point(600, 226);
-            this.btnECircunflexo.Name = "btnECircunflexo";
-            this.btnECircunflexo.Size = new System.Drawing.Size(30, 30);
-            this.btnECircunflexo.TabIndex = 75;
-            this.btnECircunflexo.Text = "Ê";
-            this.btnECircunflexo.UseVisualStyleBackColor = true;
-            // 
-            // btnIAgudo
-            // 
-            this.btnIAgudo.Location = new System.Drawing.Point(630, 226);
-            this.btnIAgudo.Name = "btnIAgudo";
-            this.btnIAgudo.Size = new System.Drawing.Size(30, 30);
-            this.btnIAgudo.TabIndex = 76;
-            this.btnIAgudo.Text = "Í";
-            this.btnIAgudo.UseVisualStyleBackColor = true;
-            // 
-            // btnOAgudo
-            // 
-            this.btnOAgudo.Location = new System.Drawing.Point(660, 226);
-            this.btnOAgudo.Name = "btnOAgudo";
-            this.btnOAgudo.Size = new System.Drawing.Size(30, 30);
-            this.btnOAgudo.TabIndex = 77;
-            this.btnOAgudo.Text = "Ó";
-            this.btnOAgudo.UseVisualStyleBackColor = true;
-            // 
-            // btnOCircunflexo
-            // 
-            this.btnOCircunflexo.Location = new System.Drawing.Point(690, 226);
-            this.btnOCircunflexo.Name = "btnOCircunflexo";
-            this.btnOCircunflexo.Size = new System.Drawing.Size(30, 30);
-            this.btnOCircunflexo.TabIndex = 78;
-            this.btnOCircunflexo.Text = "Ô";
-            this.btnOCircunflexo.UseVisualStyleBackColor = true;
-            // 
-            // btnOTil
-            // 
-            this.btnOTil.Location = new System.Drawing.Point(720, 226);
-            this.btnOTil.Name = "btnOTil";
-            this.btnOTil.Size = new System.Drawing.Size(30, 30);
-            this.btnOTil.TabIndex = 79;
-            this.btnOTil.Text = "Õ";
-            this.btnOTil.UseVisualStyleBackColor = true;
-            // 
-            // btnUAgudo
-            // 
-            this.btnUAgudo.Location = new System.Drawing.Point(750, 226);
-            this.btnUAgudo.Name = "btnUAgudo";
-            this.btnUAgudo.Size = new System.Drawing.Size(30, 30);
-            this.btnUAgudo.TabIndex = 80;
-            this.btnUAgudo.Text = "Ú";
-            this.btnUAgudo.UseVisualStyleBackColor = true;
-            // 
-            // btnHifen
-            // 
-            this.btnHifen.Location = new System.Drawing.Point(780, 226);
-            this.btnHifen.Name = "btnHifen";
-            this.btnHifen.Size = new System.Drawing.Size(30, 30);
-            this.btnHifen.TabIndex = 81;
-            this.btnHifen.Text = "-";
-            this.btnHifen.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(810, 226);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(30, 30);
-            this.button26.TabIndex = 82;
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Purple;
-            this.label6.Location = new System.Drawing.Point(447, 313);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(294, 17);
-            this.label6.TabIndex = 83;
-            this.label6.Text = "Dica: _______________________________";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(447, 347);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 17);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "Pontos: ____";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(447, 383);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 17);
-            this.label8.TabIndex = 85;
-            this.label8.Text = "Erros: ____";
-            // 
-            // chkDica
-            // 
-            this.chkDica.AutoSize = true;
-            this.chkDica.Location = new System.Drawing.Point(589, 347);
-            this.chkDica.Name = "chkDica";
-            this.chkDica.Size = new System.Drawing.Size(90, 21);
-            this.chkDica.TabIndex = 86;
-            this.chkDica.Text = "Com dica";
-            this.chkDica.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(584, 383);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 17);
-            this.label9.TabIndex = 87;
-            this.label9.Text = "Tempo restante: _____s";
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.Location = new System.Drawing.Point(765, 347);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 33);
-            this.btnIniciar.TabIndex = 88;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            // 
-            // chkArduino
-            // 
-            this.chkArduino.AutoSize = true;
-            this.chkArduino.Location = new System.Drawing.Point(450, 416);
-            this.chkArduino.Name = "chkArduino";
-            this.chkArduino.Size = new System.Drawing.Size(76, 21);
-            this.chkArduino.TabIndex = 89;
-            this.chkArduino.Text = "Arduino";
-            this.chkArduino.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(585, 416);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(171, 17);
-            this.label10.TabIndex = 90;
-            this.label10.Text = "Porta serial para arduino:";
-            // 
             // tpForca
             // 
             this.tpForca.Controls.Add(this.label10);
@@ -1134,7 +429,7 @@
             this.tpForca.Controls.Add(this.chkDica);
             this.tpForca.Controls.Add(this.label8);
             this.tpForca.Controls.Add(this.label7);
-            this.tpForca.Controls.Add(this.label6);
+            this.tpForca.Controls.Add(this.lbDica);
             this.tpForca.Controls.Add(this.button26);
             this.tpForca.Controls.Add(this.btnHifen);
             this.tpForca.Controls.Add(this.btnUAgudo);
@@ -1187,7 +482,7 @@
             this.tpForca.Controls.Add(this.Personagem_16);
             this.tpForca.Controls.Add(this.Add_2_04);
             this.tpForca.Controls.Add(this.Forca_13);
-            this.tpForca.Controls.Add(this.dataGridView1);
+            this.tpForca.Controls.Add(this.dgvForca);
             this.tpForca.Controls.Add(this.Forca_09);
             this.tpForca.Controls.Add(this.Forca_08);
             this.tpForca.Controls.Add(this.Add_2_07);
@@ -1206,6 +501,712 @@
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
             this.tpForca.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(585, 416);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 17);
+            this.label10.TabIndex = 90;
+            this.label10.Text = "Porta serial para arduino:";
+            // 
+            // chkArduino
+            // 
+            this.chkArduino.AutoSize = true;
+            this.chkArduino.Location = new System.Drawing.Point(450, 416);
+            this.chkArduino.Name = "chkArduino";
+            this.chkArduino.Size = new System.Drawing.Size(76, 21);
+            this.chkArduino.TabIndex = 89;
+            this.chkArduino.Text = "Arduino";
+            this.chkArduino.UseVisualStyleBackColor = true;
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.Location = new System.Drawing.Point(765, 347);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(75, 33);
+            this.btnIniciar.TabIndex = 88;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(584, 383);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 17);
+            this.label9.TabIndex = 87;
+            this.label9.Text = "Tempo restante: _____s";
+            // 
+            // chkDica
+            // 
+            this.chkDica.AutoSize = true;
+            this.chkDica.Location = new System.Drawing.Point(589, 347);
+            this.chkDica.Name = "chkDica";
+            this.chkDica.Size = new System.Drawing.Size(90, 21);
+            this.chkDica.TabIndex = 86;
+            this.chkDica.Text = "Com dica";
+            this.chkDica.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(447, 383);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 17);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "Erros: ____";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(447, 347);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 17);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Pontos: ____";
+            // 
+            // lbDica
+            // 
+            this.lbDica.AutoSize = true;
+            this.lbDica.ForeColor = System.Drawing.Color.Purple;
+            this.lbDica.Location = new System.Drawing.Point(447, 313);
+            this.lbDica.Name = "lbDica";
+            this.lbDica.Size = new System.Drawing.Size(294, 17);
+            this.lbDica.TabIndex = 83;
+            this.lbDica.Text = "Dica: _______________________________";
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(810, 226);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(30, 30);
+            this.button26.TabIndex = 82;
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // btnHifen
+            // 
+            this.btnHifen.Location = new System.Drawing.Point(780, 226);
+            this.btnHifen.Name = "btnHifen";
+            this.btnHifen.Size = new System.Drawing.Size(30, 30);
+            this.btnHifen.TabIndex = 81;
+            this.btnHifen.Text = "-";
+            this.btnHifen.UseVisualStyleBackColor = true;
+            // 
+            // btnUAgudo
+            // 
+            this.btnUAgudo.Location = new System.Drawing.Point(750, 226);
+            this.btnUAgudo.Name = "btnUAgudo";
+            this.btnUAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnUAgudo.TabIndex = 80;
+            this.btnUAgudo.Text = "Ú";
+            this.btnUAgudo.UseVisualStyleBackColor = true;
+            // 
+            // btnOTil
+            // 
+            this.btnOTil.Location = new System.Drawing.Point(720, 226);
+            this.btnOTil.Name = "btnOTil";
+            this.btnOTil.Size = new System.Drawing.Size(30, 30);
+            this.btnOTil.TabIndex = 79;
+            this.btnOTil.Text = "Õ";
+            this.btnOTil.UseVisualStyleBackColor = true;
+            // 
+            // btnOCircunflexo
+            // 
+            this.btnOCircunflexo.Location = new System.Drawing.Point(690, 226);
+            this.btnOCircunflexo.Name = "btnOCircunflexo";
+            this.btnOCircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnOCircunflexo.TabIndex = 78;
+            this.btnOCircunflexo.Text = "Ô";
+            this.btnOCircunflexo.UseVisualStyleBackColor = true;
+            // 
+            // btnOAgudo
+            // 
+            this.btnOAgudo.Location = new System.Drawing.Point(660, 226);
+            this.btnOAgudo.Name = "btnOAgudo";
+            this.btnOAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnOAgudo.TabIndex = 77;
+            this.btnOAgudo.Text = "Ó";
+            this.btnOAgudo.UseVisualStyleBackColor = true;
+            // 
+            // btnIAgudo
+            // 
+            this.btnIAgudo.Location = new System.Drawing.Point(630, 226);
+            this.btnIAgudo.Name = "btnIAgudo";
+            this.btnIAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnIAgudo.TabIndex = 76;
+            this.btnIAgudo.Text = "Í";
+            this.btnIAgudo.UseVisualStyleBackColor = true;
+            // 
+            // btnECircunflexo
+            // 
+            this.btnECircunflexo.Location = new System.Drawing.Point(600, 226);
+            this.btnECircunflexo.Name = "btnECircunflexo";
+            this.btnECircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnECircunflexo.TabIndex = 75;
+            this.btnECircunflexo.Text = "Ê";
+            this.btnECircunflexo.UseVisualStyleBackColor = true;
+            // 
+            // btnEAgudo
+            // 
+            this.btnEAgudo.Location = new System.Drawing.Point(570, 226);
+            this.btnEAgudo.Name = "btnEAgudo";
+            this.btnEAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnEAgudo.TabIndex = 74;
+            this.btnEAgudo.Text = "É";
+            this.btnEAgudo.UseVisualStyleBackColor = true;
+            // 
+            // btnATil
+            // 
+            this.btnATil.Location = new System.Drawing.Point(540, 226);
+            this.btnATil.Name = "btnATil";
+            this.btnATil.Size = new System.Drawing.Size(30, 30);
+            this.btnATil.TabIndex = 73;
+            this.btnATil.Text = "Ã";
+            this.btnATil.UseVisualStyleBackColor = true;
+            // 
+            // btnACircunflexo
+            // 
+            this.btnACircunflexo.Location = new System.Drawing.Point(510, 226);
+            this.btnACircunflexo.Name = "btnACircunflexo";
+            this.btnACircunflexo.Size = new System.Drawing.Size(30, 30);
+            this.btnACircunflexo.TabIndex = 72;
+            this.btnACircunflexo.Text = "Â";
+            this.btnACircunflexo.UseVisualStyleBackColor = true;
+            // 
+            // btnAAgudo
+            // 
+            this.btnAAgudo.Location = new System.Drawing.Point(480, 226);
+            this.btnAAgudo.Name = "btnAAgudo";
+            this.btnAAgudo.Size = new System.Drawing.Size(30, 30);
+            this.btnAAgudo.TabIndex = 71;
+            this.btnAAgudo.Text = "Á";
+            this.btnAAgudo.UseVisualStyleBackColor = true;
+            this.btnAAgudo.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // btnCedilha
+            // 
+            this.btnCedilha.Location = new System.Drawing.Point(450, 226);
+            this.btnCedilha.Name = "btnCedilha";
+            this.btnCedilha.Size = new System.Drawing.Size(30, 30);
+            this.btnCedilha.TabIndex = 70;
+            this.btnCedilha.Text = "Ç";
+            this.btnCedilha.UseVisualStyleBackColor = true;
+            // 
+            // btnZ
+            // 
+            this.btnZ.Location = new System.Drawing.Point(810, 194);
+            this.btnZ.Name = "btnZ";
+            this.btnZ.Size = new System.Drawing.Size(30, 30);
+            this.btnZ.TabIndex = 69;
+            this.btnZ.Text = "Z";
+            this.btnZ.UseVisualStyleBackColor = true;
+            // 
+            // btnY
+            // 
+            this.btnY.Location = new System.Drawing.Point(780, 194);
+            this.btnY.Name = "btnY";
+            this.btnY.Size = new System.Drawing.Size(30, 30);
+            this.btnY.TabIndex = 68;
+            this.btnY.Text = "Y";
+            this.btnY.UseVisualStyleBackColor = true;
+            // 
+            // btnX
+            // 
+            this.btnX.Location = new System.Drawing.Point(750, 194);
+            this.btnX.Name = "btnX";
+            this.btnX.Size = new System.Drawing.Size(30, 30);
+            this.btnX.TabIndex = 67;
+            this.btnX.Text = "X";
+            this.btnX.UseVisualStyleBackColor = true;
+            // 
+            // btnW
+            // 
+            this.btnW.Location = new System.Drawing.Point(720, 194);
+            this.btnW.Name = "btnW";
+            this.btnW.Size = new System.Drawing.Size(30, 30);
+            this.btnW.TabIndex = 66;
+            this.btnW.Text = "W";
+            this.btnW.UseVisualStyleBackColor = true;
+            // 
+            // btnV
+            // 
+            this.btnV.Location = new System.Drawing.Point(690, 194);
+            this.btnV.Name = "btnV";
+            this.btnV.Size = new System.Drawing.Size(30, 30);
+            this.btnV.TabIndex = 65;
+            this.btnV.Text = "V";
+            this.btnV.UseVisualStyleBackColor = true;
+            // 
+            // btnU
+            // 
+            this.btnU.Location = new System.Drawing.Point(660, 194);
+            this.btnU.Name = "btnU";
+            this.btnU.Size = new System.Drawing.Size(30, 30);
+            this.btnU.TabIndex = 64;
+            this.btnU.Text = "U";
+            this.btnU.UseVisualStyleBackColor = true;
+            // 
+            // btnT
+            // 
+            this.btnT.Location = new System.Drawing.Point(630, 194);
+            this.btnT.Name = "btnT";
+            this.btnT.Size = new System.Drawing.Size(30, 30);
+            this.btnT.TabIndex = 63;
+            this.btnT.Text = "T";
+            this.btnT.UseVisualStyleBackColor = true;
+            // 
+            // btnS
+            // 
+            this.btnS.Location = new System.Drawing.Point(600, 194);
+            this.btnS.Name = "btnS";
+            this.btnS.Size = new System.Drawing.Size(30, 30);
+            this.btnS.TabIndex = 62;
+            this.btnS.Text = "S";
+            this.btnS.UseVisualStyleBackColor = true;
+            // 
+            // btnR
+            // 
+            this.btnR.Location = new System.Drawing.Point(570, 194);
+            this.btnR.Name = "btnR";
+            this.btnR.Size = new System.Drawing.Size(30, 30);
+            this.btnR.TabIndex = 61;
+            this.btnR.Text = "R";
+            this.btnR.UseVisualStyleBackColor = true;
+            // 
+            // btnQ
+            // 
+            this.btnQ.Location = new System.Drawing.Point(540, 194);
+            this.btnQ.Name = "btnQ";
+            this.btnQ.Size = new System.Drawing.Size(30, 30);
+            this.btnQ.TabIndex = 60;
+            this.btnQ.Text = "Q";
+            this.btnQ.UseVisualStyleBackColor = true;
+            // 
+            // btnP
+            // 
+            this.btnP.Location = new System.Drawing.Point(510, 194);
+            this.btnP.Name = "btnP";
+            this.btnP.Size = new System.Drawing.Size(30, 30);
+            this.btnP.TabIndex = 59;
+            this.btnP.Text = "P";
+            this.btnP.UseVisualStyleBackColor = true;
+            // 
+            // btnO
+            // 
+            this.btnO.Location = new System.Drawing.Point(480, 194);
+            this.btnO.Name = "btnO";
+            this.btnO.Size = new System.Drawing.Size(30, 30);
+            this.btnO.TabIndex = 58;
+            this.btnO.Text = "O";
+            this.btnO.UseVisualStyleBackColor = true;
+            // 
+            // btnN
+            // 
+            this.btnN.Location = new System.Drawing.Point(450, 194);
+            this.btnN.Name = "btnN";
+            this.btnN.Size = new System.Drawing.Size(30, 30);
+            this.btnN.TabIndex = 57;
+            this.btnN.Text = "N";
+            this.btnN.UseVisualStyleBackColor = true;
+            // 
+            // btnM
+            // 
+            this.btnM.Location = new System.Drawing.Point(810, 163);
+            this.btnM.Name = "btnM";
+            this.btnM.Size = new System.Drawing.Size(30, 30);
+            this.btnM.TabIndex = 56;
+            this.btnM.Text = "M";
+            this.btnM.UseVisualStyleBackColor = true;
+            // 
+            // btnL
+            // 
+            this.btnL.Location = new System.Drawing.Point(780, 163);
+            this.btnL.Name = "btnL";
+            this.btnL.Size = new System.Drawing.Size(30, 30);
+            this.btnL.TabIndex = 55;
+            this.btnL.Text = "L";
+            this.btnL.UseVisualStyleBackColor = true;
+            // 
+            // btnK
+            // 
+            this.btnK.Location = new System.Drawing.Point(750, 163);
+            this.btnK.Name = "btnK";
+            this.btnK.Size = new System.Drawing.Size(30, 30);
+            this.btnK.TabIndex = 54;
+            this.btnK.Text = "K";
+            this.btnK.UseVisualStyleBackColor = true;
+            // 
+            // btnJ
+            // 
+            this.btnJ.Location = new System.Drawing.Point(720, 163);
+            this.btnJ.Name = "btnJ";
+            this.btnJ.Size = new System.Drawing.Size(30, 30);
+            this.btnJ.TabIndex = 53;
+            this.btnJ.Text = "J";
+            this.btnJ.UseVisualStyleBackColor = true;
+            // 
+            // btnI
+            // 
+            this.btnI.Location = new System.Drawing.Point(690, 163);
+            this.btnI.Name = "btnI";
+            this.btnI.Size = new System.Drawing.Size(30, 30);
+            this.btnI.TabIndex = 52;
+            this.btnI.Text = "I";
+            this.btnI.UseVisualStyleBackColor = true;
+            // 
+            // btnH
+            // 
+            this.btnH.Location = new System.Drawing.Point(660, 163);
+            this.btnH.Name = "btnH";
+            this.btnH.Size = new System.Drawing.Size(30, 30);
+            this.btnH.TabIndex = 51;
+            this.btnH.Text = "H";
+            this.btnH.UseVisualStyleBackColor = true;
+            // 
+            // btnG
+            // 
+            this.btnG.Location = new System.Drawing.Point(630, 163);
+            this.btnG.Name = "btnG";
+            this.btnG.Size = new System.Drawing.Size(30, 30);
+            this.btnG.TabIndex = 50;
+            this.btnG.Text = "Gx";
+            this.btnG.UseVisualStyleBackColor = true;
+            this.btnG.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnF
+            // 
+            this.btnF.Location = new System.Drawing.Point(600, 163);
+            this.btnF.Name = "btnF";
+            this.btnF.Size = new System.Drawing.Size(30, 30);
+            this.btnF.TabIndex = 49;
+            this.btnF.Text = "F";
+            this.btnF.UseVisualStyleBackColor = true;
+            // 
+            // btnE
+            // 
+            this.btnE.Location = new System.Drawing.Point(570, 163);
+            this.btnE.Name = "btnE";
+            this.btnE.Size = new System.Drawing.Size(30, 30);
+            this.btnE.TabIndex = 48;
+            this.btnE.Text = "E";
+            this.btnE.UseVisualStyleBackColor = true;
+            // 
+            // btnD
+            // 
+            this.btnD.Location = new System.Drawing.Point(540, 163);
+            this.btnD.Name = "btnD";
+            this.btnD.Size = new System.Drawing.Size(30, 30);
+            this.btnD.TabIndex = 47;
+            this.btnD.Text = "D";
+            this.btnD.UseVisualStyleBackColor = true;
+            // 
+            // btnC
+            // 
+            this.btnC.Location = new System.Drawing.Point(510, 163);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(30, 30);
+            this.btnC.TabIndex = 46;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = true;
+            // 
+            // btnB
+            // 
+            this.btnB.Location = new System.Drawing.Point(480, 163);
+            this.btnB.Name = "btnB";
+            this.btnB.Size = new System.Drawing.Size(30, 30);
+            this.btnB.TabIndex = 45;
+            this.btnB.Text = "B";
+            this.btnB.UseVisualStyleBackColor = true;
+            // 
+            // btnA
+            // 
+            this.btnA.Location = new System.Drawing.Point(450, 163);
+            this.btnA.Name = "btnA";
+            this.btnA.Size = new System.Drawing.Size(30, 30);
+            this.btnA.TabIndex = 44;
+            this.btnA.Text = "A";
+            this.btnA.UseVisualStyleBackColor = true;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(564, 138);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(173, 24);
+            this.txtNome.TabIndex = 43;
+            // 
+            // Personagem_14
+            // 
+            this.Personagem_14.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_14.Image")));
+            this.Personagem_14.Location = new System.Drawing.Point(161, 279);
+            this.Personagem_14.Name = "Personagem_14";
+            this.Personagem_14.Size = new System.Drawing.Size(100, 51);
+            this.Personagem_14.TabIndex = 36;
+            this.Personagem_14.TabStop = false;
+            this.Personagem_14.Visible = false;
+            // 
+            // Personagem_10
+            // 
+            this.Personagem_10.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_10.Image")));
+            this.Personagem_10.Location = new System.Drawing.Point(222, 197);
+            this.Personagem_10.Name = "Personagem_10";
+            this.Personagem_10.Size = new System.Drawing.Size(100, 59);
+            this.Personagem_10.TabIndex = 35;
+            this.Personagem_10.TabStop = false;
+            this.Personagem_10.Visible = false;
+            // 
+            // Personagem_09
+            // 
+            this.Personagem_09.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_09.Image")));
+            this.Personagem_09.Location = new System.Drawing.Point(160, 197);
+            this.Personagem_09.Name = "Personagem_09";
+            this.Personagem_09.Size = new System.Drawing.Size(100, 85);
+            this.Personagem_09.TabIndex = 34;
+            this.Personagem_09.TabStop = false;
+            this.Personagem_09.Visible = false;
+            // 
+            // Add_08
+            // 
+            this.Add_08.Image = ((System.Drawing.Image)(resources.GetObject("Add_08.Image")));
+            this.Add_08.Location = new System.Drawing.Point(161, 181);
+            this.Add_08.Name = "Add_08";
+            this.Add_08.Size = new System.Drawing.Size(100, 50);
+            this.Add_08.TabIndex = 33;
+            this.Add_08.TabStop = false;
+            this.Add_08.Visible = false;
+            // 
+            // Personagem_1_05
+            // 
+            this.Personagem_1_05.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_1_05.Image")));
+            this.Personagem_1_05.Location = new System.Drawing.Point(152, 87);
+            this.Personagem_1_05.Name = "Personagem_1_05";
+            this.Personagem_1_05.Size = new System.Drawing.Size(105, 96);
+            this.Personagem_1_05.TabIndex = 27;
+            this.Personagem_1_05.TabStop = false;
+            this.Personagem_1_05.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(456, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 17);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Seu nome:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(508, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(216, 27);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Adivinhe a palavra!";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Curlz MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label3.Location = new System.Drawing.Point(515, -7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 85);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Forca!";
+            // 
+            // Personagem_17
+            // 
+            this.Personagem_17.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_17.Image")));
+            this.Personagem_17.Location = new System.Drawing.Point(195, 330);
+            this.Personagem_17.Name = "Personagem_17";
+            this.Personagem_17.Size = new System.Drawing.Size(100, 93);
+            this.Personagem_17.TabIndex = 38;
+            this.Personagem_17.TabStop = false;
+            this.Personagem_17.Visible = false;
+            // 
+            // Personagem_16
+            // 
+            this.Personagem_16.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_16.Image")));
+            this.Personagem_16.Location = new System.Drawing.Point(127, 330);
+            this.Personagem_16.Name = "Personagem_16";
+            this.Personagem_16.Size = new System.Drawing.Size(69, 79);
+            this.Personagem_16.TabIndex = 37;
+            this.Personagem_16.TabStop = false;
+            this.Personagem_16.Visible = false;
+            // 
+            // Add_2_04
+            // 
+            this.Add_2_04.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_04.Image")));
+            this.Add_2_04.Location = new System.Drawing.Point(104, 93);
+            this.Add_2_04.Name = "Add_2_04";
+            this.Add_2_04.Size = new System.Drawing.Size(25, 88);
+            this.Add_2_04.TabIndex = 29;
+            this.Add_2_04.TabStop = false;
+            this.Add_2_04.Visible = false;
+            // 
+            // Forca_13
+            // 
+            this.Forca_13.Image = ((System.Drawing.Image)(resources.GetObject("Forca_13.Image")));
+            this.Forca_13.Location = new System.Drawing.Point(36, 279);
+            this.Forca_13.Name = "Forca_13";
+            this.Forca_13.Size = new System.Drawing.Size(100, 165);
+            this.Forca_13.TabIndex = 1;
+            this.Forca_13.TabStop = false;
+            // 
+            // dgvForca
+            // 
+            this.dgvForca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvForca.Location = new System.Drawing.Point(450, 266);
+            this.dgvForca.Name = "dgvForca";
+            this.dgvForca.RowHeadersWidth = 51;
+            this.dgvForca.Size = new System.Drawing.Size(390, 32);
+            this.dgvForca.TabIndex = 0;
+            // 
+            // Forca_09
+            // 
+            this.Forca_09.Image = ((System.Drawing.Image)(resources.GetObject("Forca_09.Image")));
+            this.Forca_09.Location = new System.Drawing.Point(161, 197);
+            this.Forca_09.Name = "Forca_09";
+            this.Forca_09.Size = new System.Drawing.Size(100, 50);
+            this.Forca_09.TabIndex = 26;
+            this.Forca_09.TabStop = false;
+            // 
+            // Forca_08
+            // 
+            this.Forca_08.Image = ((System.Drawing.Image)(resources.GetObject("Forca_08.Image")));
+            this.Forca_08.Location = new System.Drawing.Point(161, 181);
+            this.Forca_08.Name = "Forca_08";
+            this.Forca_08.Size = new System.Drawing.Size(100, 23);
+            this.Forca_08.TabIndex = 25;
+            this.Forca_08.TabStop = false;
+            // 
+            // Add_2_07
+            // 
+            this.Add_2_07.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_07.Image")));
+            this.Add_2_07.Location = new System.Drawing.Point(103, 181);
+            this.Add_2_07.Name = "Add_2_07";
+            this.Add_2_07.Size = new System.Drawing.Size(59, 50);
+            this.Add_2_07.TabIndex = 30;
+            this.Add_2_07.TabStop = false;
+            this.Add_2_07.Visible = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(103, 181);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(59, 50);
+            this.pictureBox13.TabIndex = 32;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Visible = false;
+            // 
+            // Personagem_05
+            // 
+            this.Personagem_05.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_05.Image")));
+            this.Personagem_05.Location = new System.Drawing.Point(152, 86);
+            this.Personagem_05.Name = "Personagem_05";
+            this.Personagem_05.Size = new System.Drawing.Size(100, 95);
+            this.Personagem_05.TabIndex = 31;
+            this.Personagem_05.TabStop = false;
+            this.Personagem_05.Visible = false;
+            // 
+            // Forca_05
+            // 
+            this.Forca_05.Image = ((System.Drawing.Image)(resources.GetObject("Forca_05.Image")));
+            this.Forca_05.Location = new System.Drawing.Point(152, 87);
+            this.Forca_05.Name = "Forca_05";
+            this.Forca_05.Size = new System.Drawing.Size(100, 99);
+            this.Forca_05.TabIndex = 24;
+            this.Forca_05.TabStop = false;
+            // 
+            // Forca_02
+            // 
+            this.Forca_02.Image = ((System.Drawing.Image)(resources.GetObject("Forca_02.Image")));
+            this.Forca_02.Location = new System.Drawing.Point(161, 38);
+            this.Forca_02.Name = "Forca_02";
+            this.Forca_02.Size = new System.Drawing.Size(100, 58);
+            this.Forca_02.TabIndex = 4;
+            this.Forca_02.TabStop = false;
+            // 
+            // Enforcado
+            // 
+            this.Enforcado.Image = ((System.Drawing.Image)(resources.GetObject("Enforcado.Image")));
+            this.Enforcado.Location = new System.Drawing.Point(253, 3);
+            this.Enforcado.Name = "Enforcado";
+            this.Enforcado.Size = new System.Drawing.Size(160, 337);
+            this.Enforcado.TabIndex = 42;
+            this.Enforcado.TabStop = false;
+            this.Enforcado.Visible = false;
+            // 
+            // Add_2_03
+            // 
+            this.Add_2_03.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_2_03.BackgroundImage")));
+            this.Add_2_03.Image = ((System.Drawing.Image)(resources.GetObject("Add_2_03.Image")));
+            this.Add_2_03.Location = new System.Drawing.Point(36, 92);
+            this.Add_2_03.Name = "Add_2_03";
+            this.Add_2_03.Size = new System.Drawing.Size(70, 88);
+            this.Add_2_03.TabIndex = 28;
+            this.Add_2_03.TabStop = false;
+            this.Add_2_03.Visible = false;
+            // 
+            // Forca_03
+            // 
+            this.Forca_03.Image = ((System.Drawing.Image)(resources.GetObject("Forca_03.Image")));
+            this.Forca_03.Location = new System.Drawing.Point(36, 91);
+            this.Forca_03.Name = "Forca_03";
+            this.Forca_03.Size = new System.Drawing.Size(100, 191);
+            this.Forca_03.TabIndex = 3;
+            this.Forca_03.TabStop = false;
+            // 
+            // Forca_01
+            // 
+            this.Forca_01.Image = ((System.Drawing.Image)(resources.GetObject("Forca_01.Image")));
+            this.Forca_01.Location = new System.Drawing.Point(36, 38);
+            this.Forca_01.Name = "Forca_01";
+            this.Forca_01.Size = new System.Drawing.Size(128, 61);
+            this.Forca_01.TabIndex = 2;
+            this.Forca_01.TabStop = false;
+            // 
+            // dlgAbrir
+            // 
+            this.dlgAbrir.DefaultExt = "*.txt";
+            this.dlgAbrir.Filter = "Arquivos de texto|*.txt|Qualquer arquivo|*.*";
+            // 
+            // dlgSalvar
+            // 
+            this.dlgSalvar.DefaultExt = "*.txt";
+            this.dlgSalvar.Title = "Selecione o arquivo para gravação dos dados";
+            // 
+            // slRegistro
+            // 
+            this.slRegistro.Name = "slRegistro";
+            this.slRegistro.Size = new System.Drawing.Size(70, 17);
+            this.slRegistro.Text = "Registro:0/0";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.slRegistro});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 610);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(921, 22);
+            this.statusStrip1.TabIndex = 23;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 17);
+            this.toolStripStatusLabel1.Text = "Mensagem:";
             // 
             // timer1
             // 
@@ -1232,31 +1233,31 @@
             this.tpCadastro.ResumeLayout(false);
             this.tpCadastro.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Enforcado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Forca_13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_2_04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_1_05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Add_08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Personagem_14)).EndInit();
             this.tpForca.ResumeLayout(false);
             this.tpForca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_1_05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvForca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Enforcado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Add_2_03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Forca_01)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1297,7 +1298,7 @@
         private System.Windows.Forms.CheckBox chkDica;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbDica;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button btnHifen;
         private System.Windows.Forms.Button btnUAgudo;
@@ -1350,7 +1351,7 @@
         private System.Windows.Forms.PictureBox Personagem_16;
         private System.Windows.Forms.PictureBox Add_2_04;
         private System.Windows.Forms.PictureBox Forca_13;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvForca;
         private System.Windows.Forms.PictureBox Forca_09;
         private System.Windows.Forms.PictureBox Forca_08;
         private System.Windows.Forms.PictureBox Add_2_07;

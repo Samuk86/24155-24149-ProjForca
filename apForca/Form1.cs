@@ -11,17 +11,17 @@ namespace apListaLigada
 {
   public partial class FrmAlunos : Form
   {
-    ListaDupla<PalavraDica> lista1;
+    ListaDupla<Dicionario> lista1;
 
     public FrmAlunos()
     {
       InitializeComponent();
     }
 
-    private void FazerLeitura(ref ListaDupla<PalavraDica> qualLista)
+    private void FazerLeitura(ref ListaDupla<Dicionario> qualLista)
     {
       // instanciar a lista de palavras e dicas
-      qualLista = new ListaDupla<PalavraDica>();
+      qualLista = new ListaDupla<Dicionario>();
       // pedir ao usuário o nome do arquivo de entrada
       if (dlgAbrir.ShowDialog() == DialogResult.OK)
             {
@@ -34,7 +34,7 @@ namespace apListaLigada
                     // e inseri-lo no final da lista duplamente ligada
                     linha = arquivo.ReadLine();
                     if (linha != "")
-                        qualLista.InserirAposFim(new PalavraDica(linha));
+                        qualLista.InserirAposFim(new Dicionario(linha));
                 }
                 arquivo.Close();
             }
@@ -46,7 +46,7 @@ namespace apListaLigada
             if (txtPalavra.Text != "" && txtDica.Text != "")
             {
                 // criar objeto da classe Palavra e Dica para busca
-                var novaPalavra = new PalavraDica(txtPalavra.Text, txtDica.Text);
+                var novaPalavra = new Dicionario(txtPalavra.Text, txtDica.Text);
                 // tentar incluir em ordem esse objeto na lista1
                 if (!lista1.InserirEmOrdem(novaPalavra))
                     // se não incluiu (já existe) avisar o usuário
@@ -65,7 +65,7 @@ namespace apListaLigada
             if (txtPalavra.Text != "")
             {
                 // criar um objeto da classe de Palavra e Dica para busca
-                var palavraProcurada = new PalavraDica(txtPalavra.Text, ".");
+                var palavraProcurada = new Dicionario(txtPalavra.Text, ".");
                 // se a palavra existe na lista1, posicionar o ponteiro atual nesse nó e exibir o registro atual
                 if (!lista1.Existe(palavraProcurada))
                     // senão, avisar usuário que a palavra não existe
@@ -91,7 +91,7 @@ namespace apListaLigada
 
                 if (resultado == DialogResult.Yes)
                 {
-                    var palavraARemover = new PalavraDica(txtPalavra.Text, ".");
+                    var palavraARemover = new Dicionario(txtPalavra.Text, ".");
                     lista1.Remover(palavraARemover);
                 }
                 else
@@ -116,11 +116,11 @@ namespace apListaLigada
       }
     }
 
-    private void ExibirDados(ListaDupla<PalavraDica> aLista, ListBox lsb, Direcao qualDirecao)
+    private void ExibirDados(ListaDupla<Dicionario> aLista, ListBox lsb, Direcao qualDirecao)
     {
       lsb.Items.Clear();
       var dadosDaLista = aLista.Listagem(qualDirecao);
-      foreach (PalavraDica palavra in dadosDaLista)
+      foreach (Dicionario palavra in dadosDaLista)
         lsb.Items.Add(palavra);
     }
 
@@ -231,6 +231,20 @@ namespace apListaLigada
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            var sorteio = new Random();
+            int num = sorteio.Next(lista1.QuantosNos);
+            var escolhido = lista1[num];
+            tabControl1.Enabled = false;
+
+            if (chkDica.Checked)
+                lbDica.Text = $"Dica: {escolhido.Dica}";
+
+            dgvForca.Rows.Clear();
+            dgvForca.ColumnCount = escolhido.Palavra.Length;
         }
     }
 }

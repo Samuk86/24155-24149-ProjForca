@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class PalavraDica : IComparable<PalavraDica>, IRegistro
+public class Dicionario : IComparable<Dicionario>, IRegistro
 {
   // mapeamento dos campos da linha de dados do arquivo
   const int tamanhoPalavra = 30;
@@ -16,6 +16,7 @@ public class PalavraDica : IComparable<PalavraDica>, IRegistro
 
   // atributos da classe PalavraDica:
   string palavra, dica;
+    bool[] acertou = new bool[tamanhoPalavra];
 
   public string Palavra
   {
@@ -41,18 +42,18 @@ public class PalavraDica : IComparable<PalavraDica>, IRegistro
     }
   }
 
-  public PalavraDica(string linhaDeDados)
+  public Dicionario(string linhaDeDados)
   {
         Palavra = linhaDeDados.Substring(inicioPalavra, tamanhoPalavra).Trim();
         Dica = linhaDeDados.Substring(inicioDica);
   }
-  public PalavraDica(string palavra, string dica)
+  public Dicionario(string palavra, string dica)
     {
         Palavra = palavra;
         Dica = dica;
     }
 
-  public int CompareTo(PalavraDica outroAluno)
+  public int CompareTo(Dicionario outroAluno)
   {
     return this.palavra.CompareTo(outroAluno.palavra);
   }
