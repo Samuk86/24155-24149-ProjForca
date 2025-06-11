@@ -218,12 +218,7 @@ namespace apListaLigada
             txtDica.Text = lista1[lista1.NumeroDoNoAtual].Dica;
     }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button37_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
 
         }
