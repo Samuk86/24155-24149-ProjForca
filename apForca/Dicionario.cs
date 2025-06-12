@@ -16,7 +16,8 @@ public class Dicionario : IComparable<Dicionario>, IRegistro
 
   // atributos da classe PalavraDica:
   string palavra, dica;
-    bool[] acertou = new bool[tamanhoPalavra];
+
+    public bool[] acertou = new bool[tamanhoPalavra];
 
   public string Palavra
   {

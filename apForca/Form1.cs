@@ -12,6 +12,7 @@ namespace apListaLigada
   public partial class FrmAlunos : Form
   {
     ListaDupla<Dicionario> lista1;
+        int erros;
 
     public FrmAlunos()
     {
@@ -245,6 +246,63 @@ namespace apListaLigada
 
             dgvForca.Rows.Clear();
             dgvForca.ColumnCount = escolhido.Palavra.Length;
+
+            erros = 0;
+        }
+
+        private void Letra_Click(object sender, EventArgs e)
+        {
+            Button botao = sender as Button;
+            char letra = botao.Text[0];
+            var dici = lista1.Atual.Info;
+
+            bool ocorreu = false;
+            for (int i = 0; i < dici.Palavra.Length; i++)
+            {
+                if (dici.Palavra.ToUpper()[i] == letra)
+                {
+                    dgvForca[i, 0].Value = letra;
+                    dici.acertou[i] = true;
+                    ocorreu = true;
+                }
+            }
+
+            if (!ocorreu)
+                erros++;
+
+            if (erros == 1)
+            {
+                Personagem_05.Visible = true;
+                Add_08.Visible = true;
+            }
+            else if (erros == 2)
+            {
+                Personagem_09.Visible = true;
+            }
+            else if (erros == 3)
+            {
+                Personagem_07.Visible = true;
+            }
+            else if (erros == 4)
+            {
+                Personagem_10.Visible = true;
+            }
+            else if (erros == 5)
+            {
+                Personagem_14.Visible = true;
+            }
+            else if (erros == 6)
+            {
+                Personagem_16.Visible = true;
+            }
+            else if (erros == 7)
+            {
+                Personagem_17.Visible = true;
+            }
+            else if (erros == 8)
+            {
+                Personagem_1_05.Visible = true;
+            }
         }
     }
 }

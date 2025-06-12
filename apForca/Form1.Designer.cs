@@ -120,7 +120,7 @@
             this.Forca_09 = new System.Windows.Forms.PictureBox();
             this.Forca_08 = new System.Windows.Forms.PictureBox();
             this.Add_2_07 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.Personagem_07 = new System.Windows.Forms.PictureBox();
             this.Personagem_05 = new System.Windows.Forms.PictureBox();
             this.Forca_05 = new System.Windows.Forms.PictureBox();
             this.Forca_02 = new System.Windows.Forms.PictureBox();
@@ -153,7 +153,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).BeginInit();
@@ -485,15 +485,15 @@
             this.tpForca.Controls.Add(this.dgvForca);
             this.tpForca.Controls.Add(this.Forca_09);
             this.tpForca.Controls.Add(this.Forca_08);
-            this.tpForca.Controls.Add(this.Add_2_07);
-            this.tpForca.Controls.Add(this.pictureBox13);
             this.tpForca.Controls.Add(this.Personagem_05);
             this.tpForca.Controls.Add(this.Forca_05);
             this.tpForca.Controls.Add(this.Forca_02);
             this.tpForca.Controls.Add(this.Enforcado);
             this.tpForca.Controls.Add(this.Add_2_03);
-            this.tpForca.Controls.Add(this.Forca_03);
             this.tpForca.Controls.Add(this.Forca_01);
+            this.tpForca.Controls.Add(this.Add_2_07);
+            this.tpForca.Controls.Add(this.Personagem_07);
+            this.tpForca.Controls.Add(this.Forca_03);
             this.tpForca.Location = new System.Drawing.Point(4, 26);
             this.tpForca.Name = "tpForca";
             this.tpForca.Padding = new System.Windows.Forms.Padding(3);
@@ -588,6 +588,7 @@
             this.button26.Size = new System.Drawing.Size(30, 30);
             this.button26.TabIndex = 82;
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnHifen
             // 
@@ -597,6 +598,7 @@
             this.btnHifen.TabIndex = 81;
             this.btnHifen.Text = "-";
             this.btnHifen.UseVisualStyleBackColor = true;
+            this.btnHifen.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnUAgudo
             // 
@@ -606,6 +608,7 @@
             this.btnUAgudo.TabIndex = 80;
             this.btnUAgudo.Text = "Ú";
             this.btnUAgudo.UseVisualStyleBackColor = true;
+            this.btnUAgudo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnOTil
             // 
@@ -615,6 +618,7 @@
             this.btnOTil.TabIndex = 79;
             this.btnOTil.Text = "Õ";
             this.btnOTil.UseVisualStyleBackColor = true;
+            this.btnOTil.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnOCircunflexo
             // 
@@ -624,6 +628,7 @@
             this.btnOCircunflexo.TabIndex = 78;
             this.btnOCircunflexo.Text = "Ô";
             this.btnOCircunflexo.UseVisualStyleBackColor = true;
+            this.btnOCircunflexo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnOAgudo
             // 
@@ -633,6 +638,7 @@
             this.btnOAgudo.TabIndex = 77;
             this.btnOAgudo.Text = "Ó";
             this.btnOAgudo.UseVisualStyleBackColor = true;
+            this.btnOAgudo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnIAgudo
             // 
@@ -642,6 +648,7 @@
             this.btnIAgudo.TabIndex = 76;
             this.btnIAgudo.Text = "Í";
             this.btnIAgudo.UseVisualStyleBackColor = true;
+            this.btnIAgudo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnECircunflexo
             // 
@@ -651,6 +658,7 @@
             this.btnECircunflexo.TabIndex = 75;
             this.btnECircunflexo.Text = "Ê";
             this.btnECircunflexo.UseVisualStyleBackColor = true;
+            this.btnECircunflexo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnEAgudo
             // 
@@ -660,6 +668,7 @@
             this.btnEAgudo.TabIndex = 74;
             this.btnEAgudo.Text = "É";
             this.btnEAgudo.UseVisualStyleBackColor = true;
+            this.btnEAgudo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnATil
             // 
@@ -669,6 +678,7 @@
             this.btnATil.TabIndex = 73;
             this.btnATil.Text = "Ã";
             this.btnATil.UseVisualStyleBackColor = true;
+            this.btnATil.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnACircunflexo
             // 
@@ -678,6 +688,7 @@
             this.btnACircunflexo.TabIndex = 72;
             this.btnACircunflexo.Text = "Â";
             this.btnACircunflexo.UseVisualStyleBackColor = true;
+            this.btnACircunflexo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnAAgudo
             // 
@@ -687,7 +698,7 @@
             this.btnAAgudo.TabIndex = 71;
             this.btnAAgudo.Text = "Á";
             this.btnAAgudo.UseVisualStyleBackColor = true;
-            this.btnAAgudo.Click += new System.EventHandler(this.button37_Click);
+            this.btnAAgudo.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnCedilha
             // 
@@ -697,6 +708,7 @@
             this.btnCedilha.TabIndex = 70;
             this.btnCedilha.Text = "Ç";
             this.btnCedilha.UseVisualStyleBackColor = true;
+            this.btnCedilha.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnZ
             // 
@@ -706,6 +718,7 @@
             this.btnZ.TabIndex = 69;
             this.btnZ.Text = "Z";
             this.btnZ.UseVisualStyleBackColor = true;
+            this.btnZ.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnY
             // 
@@ -715,6 +728,7 @@
             this.btnY.TabIndex = 68;
             this.btnY.Text = "Y";
             this.btnY.UseVisualStyleBackColor = true;
+            this.btnY.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnX
             // 
@@ -724,6 +738,7 @@
             this.btnX.TabIndex = 67;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnW
             // 
@@ -733,6 +748,7 @@
             this.btnW.TabIndex = 66;
             this.btnW.Text = "W";
             this.btnW.UseVisualStyleBackColor = true;
+            this.btnW.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnV
             // 
@@ -742,6 +758,7 @@
             this.btnV.TabIndex = 65;
             this.btnV.Text = "V";
             this.btnV.UseVisualStyleBackColor = true;
+            this.btnV.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnU
             // 
@@ -751,6 +768,7 @@
             this.btnU.TabIndex = 64;
             this.btnU.Text = "U";
             this.btnU.UseVisualStyleBackColor = true;
+            this.btnU.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnT
             // 
@@ -760,6 +778,7 @@
             this.btnT.TabIndex = 63;
             this.btnT.Text = "T";
             this.btnT.UseVisualStyleBackColor = true;
+            this.btnT.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnS
             // 
@@ -769,6 +788,7 @@
             this.btnS.TabIndex = 62;
             this.btnS.Text = "S";
             this.btnS.UseVisualStyleBackColor = true;
+            this.btnS.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnR
             // 
@@ -778,6 +798,7 @@
             this.btnR.TabIndex = 61;
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = true;
+            this.btnR.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnQ
             // 
@@ -787,6 +808,7 @@
             this.btnQ.TabIndex = 60;
             this.btnQ.Text = "Q";
             this.btnQ.UseVisualStyleBackColor = true;
+            this.btnQ.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnP
             // 
@@ -796,6 +818,7 @@
             this.btnP.TabIndex = 59;
             this.btnP.Text = "P";
             this.btnP.UseVisualStyleBackColor = true;
+            this.btnP.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnO
             // 
@@ -805,6 +828,7 @@
             this.btnO.TabIndex = 58;
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = true;
+            this.btnO.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnN
             // 
@@ -814,6 +838,7 @@
             this.btnN.TabIndex = 57;
             this.btnN.Text = "N";
             this.btnN.UseVisualStyleBackColor = true;
+            this.btnN.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnM
             // 
@@ -823,6 +848,7 @@
             this.btnM.TabIndex = 56;
             this.btnM.Text = "M";
             this.btnM.UseVisualStyleBackColor = true;
+            this.btnM.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnL
             // 
@@ -832,6 +858,7 @@
             this.btnL.TabIndex = 55;
             this.btnL.Text = "L";
             this.btnL.UseVisualStyleBackColor = true;
+            this.btnL.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnK
             // 
@@ -841,6 +868,7 @@
             this.btnK.TabIndex = 54;
             this.btnK.Text = "K";
             this.btnK.UseVisualStyleBackColor = true;
+            this.btnK.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnJ
             // 
@@ -850,6 +878,7 @@
             this.btnJ.TabIndex = 53;
             this.btnJ.Text = "J";
             this.btnJ.UseVisualStyleBackColor = true;
+            this.btnJ.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnI
             // 
@@ -859,6 +888,7 @@
             this.btnI.TabIndex = 52;
             this.btnI.Text = "I";
             this.btnI.UseVisualStyleBackColor = true;
+            this.btnI.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnH
             // 
@@ -868,6 +898,7 @@
             this.btnH.TabIndex = 51;
             this.btnH.Text = "H";
             this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnG
             // 
@@ -877,7 +908,7 @@
             this.btnG.TabIndex = 50;
             this.btnG.Text = "Gx";
             this.btnG.UseVisualStyleBackColor = true;
-            this.btnG.Click += new System.EventHandler(this.button5_Click);
+            this.btnG.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnF
             // 
@@ -887,6 +918,7 @@
             this.btnF.TabIndex = 49;
             this.btnF.Text = "F";
             this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnE
             // 
@@ -896,6 +928,7 @@
             this.btnE.TabIndex = 48;
             this.btnE.Text = "E";
             this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnD
             // 
@@ -905,6 +938,7 @@
             this.btnD.TabIndex = 47;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnC
             // 
@@ -914,6 +948,7 @@
             this.btnC.TabIndex = 46;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnB
             // 
@@ -923,6 +958,7 @@
             this.btnB.TabIndex = 45;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.Click += new System.EventHandler(this.Letra_Click);
             // 
             // btnA
             // 
@@ -932,6 +968,7 @@
             this.btnA.TabIndex = 44;
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
+            this.btnA.Click += new System.EventHandler(this.Letra_Click);
             // 
             // txtNome
             // 
@@ -1013,11 +1050,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Curlz MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label3.Location = new System.Drawing.Point(515, -7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 85);
+            this.label3.Size = new System.Drawing.Size(220, 73);
             this.label3.TabIndex = 39;
             this.label3.Text = "Forca!";
             // 
@@ -1097,15 +1134,15 @@
             this.Add_2_07.TabStop = false;
             this.Add_2_07.Visible = false;
             // 
-            // pictureBox13
+            // Personagem_07
             // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(103, 181);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox13.TabIndex = 32;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Visible = false;
+            this.Personagem_07.Image = ((System.Drawing.Image)(resources.GetObject("Personagem_07.Image")));
+            this.Personagem_07.Location = new System.Drawing.Point(103, 181);
+            this.Personagem_07.Name = "Personagem_07";
+            this.Personagem_07.Size = new System.Drawing.Size(59, 50);
+            this.Personagem_07.TabIndex = 32;
+            this.Personagem_07.TabStop = false;
+            this.Personagem_07.Visible = false;
             // 
             // Personagem_05
             // 
@@ -1248,7 +1285,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Forca_09)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_08)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add_2_07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Personagem_07)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Personagem_05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Forca_02)).EndInit();
@@ -1355,7 +1392,7 @@
         private System.Windows.Forms.PictureBox Forca_09;
         private System.Windows.Forms.PictureBox Forca_08;
         private System.Windows.Forms.PictureBox Add_2_07;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox Personagem_07;
         private System.Windows.Forms.PictureBox Personagem_05;
         private System.Windows.Forms.PictureBox Forca_05;
         private System.Windows.Forms.PictureBox Forca_02;
