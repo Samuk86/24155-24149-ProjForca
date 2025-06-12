@@ -302,7 +302,22 @@ namespace apListaLigada
             else if (erros == 8)
             {
                 Personagem_1_05.Visible = true;
+                Perdeu();
             }
+        }
+
+        private bool Perdeu()
+        {
+            MessageBox.Show($"Mais sorte da próxima vez, {txtNome}!");
+            dgvForca.Rows.Clear();
+            return true;
+        }
+
+        private bool Ganhou()
+        {
+            MessageBox.Show($"Parabéns, {txtNome}");
+            dgvForca.Rows.Clear();
+            return true;
         }
     }
 }
