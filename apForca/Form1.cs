@@ -355,7 +355,7 @@ namespace apListaLigada
         {
             tmrTempo.Enabled = false;
             MessageBox.Show($"Mais sorte da próxima vez, {txtNome.Text}!");
-            Enforcado.Visible = true;
+            Animacao();
             Fim();
         }
 
@@ -376,6 +376,34 @@ namespace apListaLigada
             Add_2_04.Visible = true;
             Add_2_03.Visible = true;
             Fim();
-        }   
+        }
+        
+        private void Animacao()
+        {
+            EnforcadoBaixo.Visible = true;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = true;
+            EnforcadoBaixo.Visible = false;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = false;
+            EnforcadoBaixo.Visible = true;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = true;
+            EnforcadoBaixo.Visible = false;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = false;
+            EnforcadoBaixo.Visible = true;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = true;
+            EnforcadoBaixo.Visible = false;
+            Application.DoEvents();
+            Thread.Sleep(500);
+            Enforcado.Visible = false;
+        }
     }
 }
