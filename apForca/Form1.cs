@@ -283,6 +283,7 @@ namespace apListaLigada
             if (jogando)
             {
                 Button botao = sender as Button;
+                botao.Enabled = false;
                 string letra = botao.Text;
                 var dici = lista1.Atual.Info;
                 bool ocorreu = false;
@@ -311,6 +312,7 @@ namespace apListaLigada
                     }
                     else if (erros == 8)
                     {
+                        Personagem_7.BringToFront();
                         Perdeu();
                     }
                 }
@@ -329,7 +331,7 @@ namespace apListaLigada
         {
             dgvForca.Columns.Clear();
             Application.DoEvents();
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
             for (int i = 0; i < 8; i++)
             {
                 var imagem = Controls.Find($"Personagem_{i}", true).FirstOrDefault() as PictureBox;
@@ -339,6 +341,7 @@ namespace apListaLigada
                 }
             }
             Enforcado.Visible = false;
+            EnforcadoBaixo.Visible = false;
             Add_2_07.Visible = false;
             Add_2_04.Visible = false;
             Add_2_03.Visible = false;
@@ -349,20 +352,36 @@ namespace apListaLigada
             lbErros.Text = "Erros: ____";
             lbTempo.Text = "Tempo restante: _____s";
             jogando = false;
+
+            foreach (Control c in tpForca.Controls)
+            {
+                if (c is Button)
+                {
+                    c.Enabled = true;
+                }
+            }
         }
 
         private void Perdeu()
         {
             tmrTempo.Enabled = false;
-            MessageBox.Show($"Mais sorte da próxima vez, {txtNome.Text}!");
+            for (int i = 1; i < 8; i++)
+            {
+                var imagem = Controls.Find($"Personagem_{i}", true).FirstOrDefault() as PictureBox;
+                if (imagem != null)
+                {
+                    imagem.Visible = true;
+                }
+            }
+            Add_08.Visible = true;
             Animacao();
+            MessageBox.Show($"Mais sorte da próxima vez, {txtNome.Text}!");
             Fim();
         }
 
         private void Ganhou()
         {
             tmrTempo.Enabled = false;
-            MessageBox.Show($"Parabéns, {txtNome.Text}, você venceu!");
             for (int i = 0; i < 7; i++)
             {
                 var imagem = Controls.Find($"Personagem_{i}", true).FirstOrDefault() as PictureBox;
@@ -375,35 +394,24 @@ namespace apListaLigada
             Add_2_07.Visible = true;
             Add_2_04.Visible = true;
             Add_2_03.Visible = true;
+            MessageBox.Show($"Parabéns, {txtNome.Text}, você venceu!");
             Fim();
         }
         
         private void Animacao()
         {
             EnforcadoBaixo.Visible = true;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = true;
-            EnforcadoBaixo.Visible = false;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = false;
-            EnforcadoBaixo.Visible = true;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = true;
-            EnforcadoBaixo.Visible = false;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = false;
-            EnforcadoBaixo.Visible = true;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = true;
-            EnforcadoBaixo.Visible = false;
-            Application.DoEvents();
-            Thread.Sleep(500);
-            Enforcado.Visible = false;
+            for (int i = 0; i < 3; i++)
+            {
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Enforcado.Visible = true;
+                EnforcadoBaixo.Visible = false;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Enforcado.Visible = false;
+                EnforcadoBaixo.Visible = true;
+            }
         }
     }
 }
