@@ -5,6 +5,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace apListaLigada
@@ -12,7 +14,8 @@ namespace apListaLigada
   public partial class FrmAlunos : Form
   {
     ListaDupla<Dicionario> lista1;
-        int erros;
+        int erros, tempo, pontos;
+        bool jogando;
 
     public FrmAlunos()
     {
@@ -229,95 +232,150 @@ namespace apListaLigada
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void tmrTempo_Tick(object sender, EventArgs e)
         {
-
+            tempo--;
+            if (tempo <= 0)
+            {
+                tmrTempo.Enabled = false;
+                Perdeu();
+            }
+            else
+            {
+                lbTempo.Text = $"Tempo restante: {tempo}s";
+            }
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+            jogando = true;
             var sorteio = new Random();
             int num = sorteio.Next(lista1.QuantosNos);
             var escolhido = lista1[num];
-            tabControl1.Enabled = false;
 
             if (chkDica.Checked)
+            {
                 lbDica.Text = $"Dica: {escolhido.Dica}";
+                tmrTempo.Enabled = true;
+                tempo = 15;
+            }
+            else
+            {
+                lbDica.Text = "Dica: _______________________________";
+                tmrTempo.Enabled = false;
+            }
 
-            dgvForca.Rows.Clear();
+            dgvForca.Columns.Clear();
             dgvForca.ColumnCount = escolhido.Palavra.Length;
+            dgvForca.RowHeadersVisible = false;
+
+            foreach (DataGridViewColumn coluna in dgvForca.Columns)
+            {
+                coluna.Width = dgvForca.Width / escolhido.Palavra.Length;
+            }
 
             erros = 0;
+            pontos = 0;
         }
 
         private void Letra_Click(object sender, EventArgs e)
         {
-            Button botao = sender as Button;
-            char letra = botao.Text[0];
-            var dici = lista1.Atual.Info;
-
-            bool ocorreu = false;
-            for (int i = 0; i < dici.Palavra.Length; i++)
+            if (jogando)
             {
-                if (dici.Palavra.ToUpper()[i] == letra)
+                Button botao = sender as Button;
+                string letra = botao.Text;
+                var dici = lista1.Atual.Info;
+                bool ocorreu = false;
+                for (int i = 0; i < dici.Palavra.Length; i++)
                 {
-                    dgvForca[i, 0].Value = letra;
-                    dici.acertou[i] = true;
-                    ocorreu = true;
+                    if (dici.Palavra.ToUpper()[i] == letra[0])
+                    {
+                        dgvForca.Columns[i].HeaderText = letra;
+                        dici.acertou[i] = true;
+                        ocorreu = true;
+                        pontos++;
+                    }
+                }
+
+                if (!ocorreu)
+                {
+                    erros++;
+                    lbErros.Text = $"Erros: {erros}";
+
+                    var imagem = Controls.Find($"Personagem_{erros-1}", true).FirstOrDefault() as PictureBox;
+                    imagem.Visible = true;
+
+                    if (erros == 1)
+                    {
+                        Add_08.Visible = true;
+                    }
+                    else if (erros == 8)
+                    {
+                        Perdeu();
+                    }
+                }
+                else
+                {
+                    lbPontos.Text = $"Pontos: {pontos}";
+                    if (pontos == dici.Palavra.Length)
+                    {
+                        Ganhou();
+                    }
                 }
             }
-
-            if (!ocorreu)
-                erros++;
-
-            if (erros == 1)
-            {
-                Personagem_05.Visible = true;
-                Add_08.Visible = true;
-            }
-            else if (erros == 2)
-            {
-                Personagem_09.Visible = true;
-            }
-            else if (erros == 3)
-            {
-                Personagem_07.Visible = true;
-            }
-            else if (erros == 4)
-            {
-                Personagem_10.Visible = true;
-            }
-            else if (erros == 5)
-            {
-                Personagem_14.Visible = true;
-            }
-            else if (erros == 6)
-            {
-                Personagem_16.Visible = true;
-            }
-            else if (erros == 7)
-            {
-                Personagem_17.Visible = true;
-            }
-            else if (erros == 8)
-            {
-                Personagem_1_05.Visible = true;
-                Perdeu();
-            }
         }
 
-        private bool Perdeu()
+        private void Fim()
         {
-            MessageBox.Show($"Mais sorte da próxima vez, {txtNome}!");
-            dgvForca.Rows.Clear();
-            return true;
+            dgvForca.Columns.Clear();
+            Application.DoEvents();
+            Thread.Sleep(3000);
+            for (int i = 0; i < 8; i++)
+            {
+                var imagem = Controls.Find($"Personagem_{i}", true).FirstOrDefault() as PictureBox;
+                if (imagem != null)
+                {
+                    imagem.Visible = false;
+                }
+            }
+            Enforcado.Visible = false;
+            Add_2_07.Visible = false;
+            Add_2_04.Visible = false;
+            Add_2_03.Visible = false;
+            Add_08.Visible = false;
+
+            lbDica.Text = "Dica: _______________________________";
+            lbPontos.Text = "Pontos: ____";
+            lbErros.Text = "Erros: ____";
+            lbTempo.Text = "Tempo restante: _____s";
+            jogando = false;
         }
 
-        private bool Ganhou()
+        private void Perdeu()
         {
-            MessageBox.Show($"Parabéns, {txtNome}");
-            dgvForca.Rows.Clear();
-            return true;
+            tmrTempo.Enabled = false;
+            MessageBox.Show($"Mais sorte da próxima vez, {txtNome.Text}!");
+            Enforcado.Visible = true;
+            Fim();
         }
+
+        private void Ganhou()
+        {
+            tmrTempo.Enabled = false;
+            MessageBox.Show($"Parabéns, {txtNome.Text}, você venceu!");
+            for (int i = 0; i < 7; i++)
+            {
+                var imagem = Controls.Find($"Personagem_{i}", true).FirstOrDefault() as PictureBox;
+                if (imagem != null)
+                {
+                    imagem.Visible = true;
+                }
+            }
+            Add_08.Visible = true;
+            Add_2_07.Visible = true;
+            Add_2_04.Visible = true;
+            Add_2_03.Visible = true;
+            Fim();
+        }   
     }
 }
